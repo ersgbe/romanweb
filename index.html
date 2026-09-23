@@ -1,0 +1,3023 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>СТРОЙРЕМОНТ-МСК — ремонт крыш, ремонт, строительство и ремонт домов</title>
+<meta content="Ремонт протечек и кровли, когда нельзя больше откладывать, строительство и ремонт домов, веранд и хозблоков, фундаменты, опалубка, фасады, обшивка, заборы, ворота, плитка и отделочные работы." name="description"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230F1724'/%3E%3Crect x='5' y='5' width='54' height='54' fill='none' stroke='%23FFFFFF' stroke-width='2'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial,sans-serif' font-size='22' font-weight='600' fill='%23FFFFFF'%3ESR%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<!-- ===================== ЦЕНТРАЛЬНЫЙ КОНФИГ ТЕЛЕФОНА =====================
+     Меняйте номер только здесь — он подставится во все ссылки tel: и .phone на сайте -->
+<script>
+  window.SITE_PHONE = { DISPLAY: '+7 966 389 21 33', LINK: 'tel:+79663892133' };
+  document.addEventListener('DOMContentLoaded', function(){
+    var phone = window.SITE_PHONE; if(!phone) return;
+    document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+      a.setAttribute('href', 'tel:' + phone.LINK);
+      var small = a.querySelector('small');
+      if(small){ a.innerHTML = phone.DISPLAY + small.outerHTML; } else { a.textContent = phone.DISPLAY; }
+    });
+    document.querySelectorAll('.phone').forEach(function(el){
+      var small = el.querySelector('small');
+      if(el.tagName.toLowerCase() === 'a'){ el.setAttribute('href','tel:' + phone.LINK); }
+      if(small){ el.innerHTML = phone.DISPLAY + small.outerHTML; } else { el.textContent = phone.DISPLAY; }
+    });
+    document.querySelectorAll('input[type="tel"]').forEach(function(inp){ inp.setAttribute('placeholder', phone.DISPLAY); });
+  });
+</script>
+<style>
+:root{
+  --sand:#FBFCFD; --sand-deep:#F3F4F6; --graphite:#0F1724;
+  --clay:#000038; --btn-blue:#000038; --btn-blue-hover:#141452;
+  --accent:#FF5A1F; --accent-2:#FFB020; --accent-soft:#FFF1E8;
+  --olive:#475569; --stone:#6B7280; --ink-70:#374151;
+  --border:#E6E9EE; --border-strong:#0F1724; --white:#FFFFFF;
+  --f-display:'Manrope',Arial,sans-serif; --f-body:'Manrope',Arial,sans-serif; --f-mono:'IBM Plex Mono','Courier New',monospace;
+  --s-1:4px; --s-2:8px; --s-3:12px; --s-4:16px; --s-5:20px; --s-6:28px; --s-7:36px; --s-8:48px; --s-9:64px; --s-10:88px;
+  --radius:0; --ease:cubic-bezier(.2,.7,.2,1); --container:1400px; --edge:clamp(18px,4vw,56px);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0; font-family:var(--f-body); color:var(--graphite); background:var(--sand); line-height:1.55; font-weight:400; -webkit-font-smoothing:antialiased; max-width:100%; overflow-x:hidden;}
+img,svg{display:block; max-width:100%; height:auto;}
+a{color:inherit; text-decoration:none; transition:color .18s var(--ease), transform .12s var(--ease);}
+a:hover, a:focus{color:var(--clay); text-decoration:underline; transform:translateY(-1px);}
+a:focus-visible{outline:3px solid rgba(0,0,56,0.18); outline-offset:3px;}
+::selection{background:var(--accent); color:var(--white);}
+:focus-visible{outline:2px solid var(--clay); outline-offset:2px;}
+.wrap{max-width:var(--container); margin:0 auto; padding:0 var(--edge);}
+section{position:relative;}
+.pad-lg{padding:clamp(48px,6vw,96px) 0;}
+.pad-md{padding:clamp(36px,4.5vw,64px) 0;}
+.pad-sm{padding:clamp(24px,3vw,40px) 0;}
+.divider{border-top:1px solid var(--border);}
+.dark{background:var(--graphite); color:var(--sand);}
+.dark .muted{color:#94A3B8;}
+h1,h2,h3,h4{font-family:var(--f-display); font-weight:400; margin:0; letter-spacing:-0.01em; color:inherit;}
+p{margin:0;}
+.mono{font-family:var(--f-mono);}
+.eyebrow{display:flex; align-items:center; gap:10px; font-family:var(--f-mono); font-size:13.2px; font-weight:500; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin-bottom:var(--s-4);}
+.eyebrow::before{content:""; width:22px; height:1px; background:var(--accent);}
+.dark .eyebrow{color:var(--accent-2);}
+.dark .eyebrow::before{background:var(--accent-2);}
+h2.section-title{font-size:clamp(31.2px,3.6vw,50.4px); font-weight:300; line-height:1.08; max-width:20ch;}
+.lead{font-size:18.6px; color:var(--ink-70); max-width:56ch; line-height:1.7; font-weight:400;}
+.dark .lead{color:#CBD5E1;}
+.center{text-align:center; margin-left:auto; margin-right:auto;}
+
+/* buttons */
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:10px; background:var(--btn-blue); color:#fff!important; padding:14px 24px; text-decoration:none; font-family:var(--f-mono); font-weight:600; font-size:15.6px; text-transform:uppercase; letter-spacing:.06em; border:1px solid var(--btn-blue); border-radius:var(--radius); cursor:pointer; transition:transform .12s var(--ease), background .18s var(--ease), box-shadow .18s var(--ease); position:relative;}
+.btn:hover, .btn:focus-visible{transform:translateY(-2px); background:var(--btn-blue-hover); color:#fff!important; border-color:var(--btn-blue-hover); text-decoration:none; box-shadow:0 10px 24px rgba(0,0,56,.22);}
+.btn .arrow{transition:transform .25s var(--ease); font-family:var(--f-body);}
+.btn:hover .arrow{transform:translateX(4px);}
+.btn-outline{background:transparent!important; color:var(--graphite)!important; border:1px solid var(--border);}
+.btn-outline:hover, .btn-outline:focus-visible{background:var(--graphite)!important; color:#fff!important; border-color:var(--graphite)!important;}
+.btn-lg{padding:17px 30px; font-size:16.8px;}
+.btn:disabled{opacity:.4; cursor:not-allowed; transform:none;}
+.btn-accent{background:var(--accent)!important; border-color:var(--accent)!important;}
+.btn-accent:hover{background:#E8480E!important; border-color:#E8480E!important;}
+.btn-pulse{box-shadow:0 0 0 0 rgba(255,90,31,.55); animation:pulseAccent 3.2s ease-in-out infinite;}
+@keyframes pulseAccent{
+  0%{box-shadow:0 0 0 0 rgba(255,90,31,.4);}
+  70%{box-shadow:0 0 0 12px rgba(255,90,31,0);}
+  100%{box-shadow:0 0 0 0 rgba(255,90,31,0);}
+}
+button{font-family:var(--f-mono); font-size:15.6px; padding:8px 12px; border-radius:var(--radius); border:1px solid transparent; background:transparent; color:inherit; cursor:pointer; line-height:1;}
+.text-link{display:inline-flex; align-items:center; gap:8px; font-family:var(--f-mono); font-size:14.4px; font-weight:600; text-transform:uppercase; letter-spacing:.06em; text-decoration:none; color:var(--graphite); border-bottom:2px solid transparent; padding-bottom:4px; transition:color .18s var(--ease), border-color .18s var(--ease), transform .12s var(--ease);}
+.text-link:hover{color:var(--accent); border-color:var(--accent); transform:translateY(-2px);}
+
+/* image placeholders / real photos */
+.ph{background:linear-gradient(180deg,var(--white),var(--sand-deep)); border:1px solid var(--border); position:relative; overflow:hidden;}
+.ph-photo{aspect-ratio:4/5;} .ph-wide{aspect-ratio:16/9;} .ph-square{aspect-ratio:1/1;} .ph-video{aspect-ratio:16/10;}
+.ph img.zoomimg{width:100%; height:100%; object-fit:cover; transition:transform .5s var(--ease);}
+.ph:hover img.zoomimg{transform:scale(1.06);}
+.play-badge{position:absolute; inset:0; margin:auto; width:52px; height:52px; display:flex; align-items:center; justify-content:center; background:rgba(255,90,31,.85); border-radius:50%; z-index:2; pointer-events:none; box-shadow:0 8px 20px rgba(255,90,31,.35); transition:transform .25s var(--ease);}
+.video-item:hover .play-badge{transform:scale(1.12);}
+.play-badge::before{content:""; width:0; height:0; border-top:9px solid transparent; border-bottom:9px solid transparent; border-left:14px solid #fff; margin-left:4px;}
+.spec-tag{position:absolute; z-index:2; font-family:var(--f-mono); font-size:13.2px; letter-spacing:.06em; text-transform:uppercase; color:#fff; background:var(--graphite); padding:10px 14px; display:flex; flex-direction:column; gap:2px;}
+.spec-tag b{font-family:var(--f-mono); font-weight:500; font-size:15px; color:#fff;}
+.spec-tag span{color:#94A3B8; font-size:12px;}
+.badge-hot{position:absolute; z-index:3; top:14px; right:14px; background:var(--accent); color:#fff; font-family:var(--f-mono); font-size:13.2px; font-weight:600; text-transform:uppercase; letter-spacing:.04em; padding:8px 12px; display:flex; align-items:center; gap:6px; box-shadow:0 8px 20px rgba(255,90,31,.35);}
+.badge-hot .dot{width:6px; height:6px; border-radius:50%; background:#fff; animation:blinkDot 1.4s ease-in-out infinite;}
+@keyframes blinkDot{0%,100%{opacity:1;}50%{opacity:.25;}}
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .6s var(--ease), transform .6s var(--ease);}
+.reveal.in{opacity:1; transform:translateY(0);}
+/* стагер: карточки внутри сеток появляются по очереди */
+.quick-grid .reveal.in:nth-child(1),.cat-grid .reveal.in:nth-child(1),.svc-grid .reveal.in:nth-child(1),.adv-grid .reveal.in:nth-child(1),.steps-row .reveal.in:nth-child(1),.portfolio-grid .reveal.in:nth-child(1){transition-delay:0s;}
+.quick-grid .reveal.in:nth-child(2),.cat-grid .reveal.in:nth-child(2),.svc-grid .reveal.in:nth-child(2),.adv-grid .reveal.in:nth-child(2),.steps-row .reveal.in:nth-child(2),.portfolio-grid .reveal.in:nth-child(2){transition-delay:.06s;}
+.quick-grid .reveal.in:nth-child(3),.cat-grid .reveal.in:nth-child(3),.svc-grid .reveal.in:nth-child(3),.adv-grid .reveal.in:nth-child(3),.steps-row .reveal.in:nth-child(3),.portfolio-grid .reveal.in:nth-child(3){transition-delay:.12s;}
+.quick-grid .reveal.in:nth-child(4),.cat-grid .reveal.in:nth-child(4),.svc-grid .reveal.in:nth-child(4),.adv-grid .reveal.in:nth-child(4),.steps-row .reveal.in:nth-child(4),.portfolio-grid .reveal.in:nth-child(4){transition-delay:.18s;}
+.svc-grid .reveal.in:nth-child(5),.adv-grid .reveal.in:nth-child(5),.steps-row .reveal.in:nth-child(5),.portfolio-grid .reveal.in:nth-child(5){transition-delay:.24s;}
+.svc-grid .reveal.in:nth-child(6),.adv-grid .reveal.in:nth-child(6),.steps-row .reveal.in:nth-child(6),.portfolio-grid .reveal.in:nth-child(6){transition-delay:.3s;}
+.svc-grid .reveal.in:nth-child(7),.adv-grid .reveal.in:nth-child(7),.portfolio-grid .reveal.in:nth-child(7){transition-delay:.36s;}
+.svc-grid .reveal.in:nth-child(8),.adv-grid .reveal.in:nth-child(8),.portfolio-grid .reveal.in:nth-child(8){transition-delay:.42s;}
+
+/* ============ ИНТЕРАКТИВНЫЕ ЭФФЕКТЫ ============ */
+
+/* Индикатор прогресса прокрутки страницы */
+.scroll-progress{position:fixed; top:0; left:0; height:3px; width:0%; background:var(--accent); z-index:80; transition:width .1s linear;}
+
+/* Кнопка "наверх" */
+.back-to-top{position:fixed; right:22px; bottom:22px; width:46px; height:46px; border-radius:50%; background:var(--graphite); color:#fff; border:none; display:flex; align-items:center; justify-content:center; font-size:19.2px; cursor:pointer; z-index:65; opacity:0; visibility:hidden; transform:translateY(12px) scale(.85); transition:opacity .25s var(--ease), transform .25s var(--ease), background .2s var(--ease), visibility .25s; box-shadow:0 10px 24px rgba(15,23,36,.25);}
+.back-to-top.show{opacity:1; visibility:visible; transform:translateY(0) scale(1);}
+.back-to-top:hover{background:var(--accent); transform:translateY(-3px) scale(1.05);}
+
+/* Наклон + "прожектор" по курсору на карточках */
+.tilt{--mx:50%; --my:50%; position:relative; will-change:transform;}
+.tilt::before{content:""; position:absolute; inset:0; pointer-events:none; opacity:0; background:radial-gradient(180px circle at var(--mx) var(--my), rgba(255,90,31,.14), transparent 70%); transition:opacity .25s var(--ease); z-index:0;}
+.tilt:hover::before{opacity:1;}
+.tilt > *{position:relative; z-index:1;}
+
+/* Магнитные кнопки: лёгкое смещение к курсору задаётся инлайн-transform из JS,
+   плюс микро-эффект нажатия */
+.btn{will-change:transform;}
+.btn:active{transform:translateY(0) scale(.96)!important;}
+
+/* Рябь (ripple) при клике по кнопке */
+.btn{overflow:hidden;}
+.btn .ripple{position:absolute; border-radius:50%; background:rgba(255,255,255,.55); transform:scale(0); animation:rippleAnim .6s var(--ease) forwards; pointer-events:none;}
+@keyframes rippleAnim{to{transform:scale(2.6); opacity:0;}}
+
+.hero{overflow:hidden;}
+
+/* Звёздочки в отзывах "загораются" по очереди при появлении карточки */
+.review-head .stars{position:relative;}
+
+/* Бейдж "2. Осматриваем объект бесплатно" — только лёгкое мигание точки, без покачивания */
+
+/* Логотип слегка "пружинит" при наведении */
+.logo .mark{transition:transform .25s var(--ease);}
+.logo:hover .mark{transform:rotate(-6deg) scale(1.08);}
+
+/* Волновая обводка активных точек-навигации отзывов */
+.review-dot{transition:transform .2s var(--ease), opacity .2s var(--ease), background .2s var(--ease);}
+
+@media (prefers-reduced-motion: reduce){
+  .badge-hot, .btn-pulse{animation:none!important;}
+}
+
+/* ============ HEADER ============ */
+header{position:fixed; top:0; left:0; right:0; z-index:50; background:transparent; border-bottom:1px solid transparent; transition:background .3s var(--ease), border-color .3s var(--ease);}
+header.solid{background:rgba(255,255,255,.9); backdrop-filter:blur(6px); border-color:var(--border);}
+.header-inner{display:flex; align-items:center; justify-content:space-between; gap:20px; padding:16px var(--edge); min-height:64px;}
+.logo{font-family:var(--f-display); font-weight:500; font-size:19.2px; letter-spacing:.01em; text-decoration:none; display:flex; align-items:baseline; gap:8px; flex-shrink:0;}
+.logo .mark{font-family:var(--f-mono); font-weight:500; font-size:16.8px; border:1px solid var(--graphite); padding:3px 6px; background:var(--accent); color:#fff; border-color:var(--accent);}
+.logo span{font-family:var(--f-mono); font-weight:400; font-size:12px; color:var(--stone); letter-spacing:.02em; text-transform:uppercase;}
+nav.main-nav{flex:1; display:flex; justify-content:center; min-width:0;}
+nav.main-nav ul{list-style:none; display:flex; align-items:center; justify-content:center; gap:clamp(18px,2.2vw,34px); margin:0; padding:0; font-size:14.4px; font-weight:400; white-space:nowrap;}
+nav.main-nav li{position:relative; display:flex; align-items:center;}
+nav.main-nav a{text-decoration:none; position:relative; padding:5px 0; display:flex; align-items:center; gap:5px; line-height:1.2;}
+nav.main-nav a::after{content:""; position:absolute; left:0; right:100%; bottom:0; height:1px; background:var(--accent); transition:right .25s var(--ease);}
+nav.main-nav a:hover::after{right:0;}
+.has-dropdown .caret{font-size:10.8px; transition:transform .2s var(--ease);}
+.has-dropdown:hover .caret{transform:rotate(180deg);}
+/* Пункт меню с выпадающим списком: паддинг снизу убирает "мёртвую зону",
+   из-за которой список пропадал при движении курсора вниз */
+.has-dropdown{padding-bottom:14px; margin-bottom:-14px;}
+.dropdown{position:absolute; top:100%; left:50%; transform:translateX(-50%); background:#fff; border:1px solid var(--border); border-top:2px solid var(--accent); width:280px; min-width:280px; padding:8px; margin-top:0; display:none; grid-template-columns:1fr; gap:2px; box-shadow:0 18px 40px rgba(15,23,36,.14); max-height:60vh; overflow-y:auto; z-index:20;}
+.has-dropdown:hover .dropdown{display:grid;}
+.dropdown a{padding:9px 10px; font-size:15.6px; border-radius:0;}
+.dropdown a:hover{background:var(--accent-soft); color:var(--accent); text-decoration:none;}
+.dropdown a::after{display:none;}
+.header-cta{display:flex; align-items:center; gap:14px; flex-shrink:0;}
+.phone-block{display:flex; flex-direction:column; align-items:flex-end; gap:2px;}
+.phone{font-family:var(--f-mono); font-weight:500; font-size:15.6px; text-decoration:none; display:flex; flex-direction:column; align-items:flex-end; line-height:1.3;}
+.phone small{font-weight:400; font-size:12px; color:var(--stone); font-family:var(--f-body);}
+.btn-max{display:inline-flex; align-items:center; gap:6px; font-family:var(--f-mono); font-size:13.2px; font-weight:600; text-transform:uppercase; letter-spacing:.04em; color:var(--graphite); background:var(--white); border:1px solid var(--border-strong); padding:9px 14px; text-decoration:none!important; cursor:pointer; transition:background .18s var(--ease), color .18s var(--ease); flex-shrink:0;}
+.btn-max:hover{background:var(--graphite); color:#fff!important;}
+.btn-max.on-dark{color:#fff; border-color:#334155; background:transparent;}
+.btn-max.on-dark:hover{background:#fff; color:var(--graphite)!important;}
+.header-cta .btn{padding:11px 18px;}
+.menu-trigger{display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px;}
+.menu-trigger span{width:20px; height:1px; background:var(--graphite);}
+.mobile-menu{position:fixed; inset:0; background:var(--sand); z-index:60; display:flex; flex-direction:column; justify-content:space-between; padding:var(--s-6) calc(var(--edge) + 8px); transform:translateY(-100%); transition:transform .35s var(--ease); overflow-y:auto;}
+.mobile-menu.open{transform:translateY(0);}
+.mobile-menu-top{display:flex; justify-content:space-between; align-items:center;}
+.mobile-menu ul{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px;}
+.mobile-menu a{font-family:var(--f-display); font-size:26.4px; font-weight:300; text-decoration:none; display:block; padding:8px 0; border-bottom:1px solid var(--border);}
+.mobile-menu-close{background:none; border:1px solid var(--border); width:34px; height:34px; cursor:pointer; font-size:18px;}
+.mobile-menu-foot{font-size:15.6px; color:var(--stone); padding-top:20px; display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+
+/* ============ HERO ============ */
+.hero{padding-top:clamp(96px,14vw,140px); padding-bottom:0; border-bottom:1px solid var(--border); background:var(--sand);}
+.hero-grid{display:grid; grid-template-columns:.95fr 1.05fr; gap:var(--s-9); align-items:center; padding-bottom:var(--s-8);}
+.hero-copy h1{font-size:clamp(38.4px,5.28vw,69.6px); font-weight:300; line-height:1.06; max-width:16ch; margin-bottom:var(--s-5);}
+.hero-copy .lead{margin-bottom:var(--s-6);}
+.hero-checks{list-style:none; margin:0 0 var(--s-6); padding:0; display:grid; gap:12px;}
+.hero-checks li{display:flex; align-items:flex-start; gap:12px; font-size:16.2px; color:var(--ink-70);}
+.hero-checks li::before{content:"✓"; font-family:var(--f-mono); font-weight:700; color:#fff; background:var(--accent); width:18px; height:18px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:13.2px; flex-shrink:0; margin-top:1px;}
+.hero-btns{display:flex; gap:14px; flex-wrap:wrap;}
+.hero-visual{position:relative;}
+.hero-visual .ph-photo{aspect-ratio:4/5; max-height:520px; width:100%;}
+.stat-band{border-top:1px solid var(--border); padding:var(--s-6) 0; display:grid; grid-template-columns:repeat(3,1fr); column-gap:28px;}
+.stat-band .stat{padding:8px 24px 8px 0; border-right:1px solid var(--border);}
+.stat-band .stat:last-child{border-right:none;}
+.stat b{font-family:var(--f-display); font-size:clamp(31.2px,3.6vw,48px); font-weight:300; display:block; line-height:1; color:var(--graphite);}
+.stat span{font-family:var(--f-mono); font-size:12.6px; color:var(--stone); text-transform:uppercase; letter-spacing:.05em; display:block; margin-top:6px;}
+
+/* ============ БЫСТРЫЕ ПРЕИМУЩЕСТВА (4 плашки) ============ */
+.quick-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--border); border:1px solid var(--border);}
+.quick-item{background:var(--white); padding:var(--s-6) var(--s-5); display:flex; flex-direction:column; gap:10px; transition:background .2s var(--ease), transform .2s var(--ease);}
+.quick-item:hover{background:var(--accent-soft); transform:translateY(-3px);}
+.quick-item .qi-ico{font-family:var(--f-mono); font-size:15.6px; font-weight:600; color:#fff; background:var(--accent); border:1px solid var(--accent); width:34px; height:34px; display:flex; align-items:center; justify-content:center;}
+.quick-item h4{font-size:16.8px; font-weight:500; line-height:1.4;}
+.quick-item p{font-size:15px; color:var(--stone); line-height:1.55;}
+
+/* ============ QUIZ / КАЛЬКУЛЯТОР ============ */
+.quiz-wrap{border:1px solid var(--border-strong); background:var(--white); overflow:hidden; box-shadow:0 24px 60px rgba(15,23,36,.08);}
+.quiz-top{display:grid; grid-template-columns:1fr 1fr; gap:0;}
+.quiz-intro{padding:var(--s-8) var(--s-7); display:flex; flex-direction:column; justify-content:center; background:var(--graphite); color:var(--sand);}
+.quiz-intro .eyebrow{color:var(--accent-2);}
+.quiz-intro .eyebrow::before{background:var(--accent-2);}
+.quiz-intro h2{font-size:clamp(28.8px,3.12vw,40.8px); font-weight:300; margin-bottom:16px; max-width:18ch;}
+.quiz-intro p{font-size:16.8px; color:#CBD5E1; line-height:1.7; max-width:44ch;}
+.quiz-body{padding:var(--s-7);}
+.quiz-progress-label{display:flex; justify-content:space-between; align-items:center; font-family:var(--f-mono); font-size:13.2px; text-transform:uppercase; letter-spacing:.05em; color:var(--stone); margin-bottom:10px;}
+.quiz-progress-bar{height:4px; background:var(--border); width:100%; margin-bottom:var(--s-6); position:relative; border-radius:4px; overflow:hidden;}
+.quiz-progress-fill{height:100%; background:var(--accent); width:14%; transition:width .35s var(--ease);}
+.quiz-step{display:none;}
+.quiz-step.active{display:block;}
+.quiz-question{font-size:22.8px; font-weight:400; margin-bottom:var(--s-5); max-width:34ch;}
+.quiz-options{display:grid; grid-template-columns:repeat(3,1fr); gap:12px;}
+.quiz-options.cols-2{grid-template-columns:repeat(2,1fr);}
+.quiz-opt{border:1px solid var(--border); padding:16px; cursor:pointer; font-size:16.2px; text-align:left; background:var(--white); display:flex; flex-direction:column; gap:10px; transition:border-color .18s var(--ease), background .18s var(--ease), transform .15s var(--ease);}
+.quiz-opt .qo-photo{aspect-ratio:4/3; overflow:hidden; background:var(--sand-deep); border:1px solid var(--border);}
+.quiz-opt .qo-photo img{width:100%; height:100%; object-fit:cover;}
+.quiz-opt:hover{border-color:var(--accent); transform:translateY(-2px);}
+.quiz-opt.selected{border-color:var(--accent); background:var(--accent-soft);}
+.quiz-opt.selected::after{content:"✓ выбрано"; font-family:var(--f-mono); font-size:12px; color:var(--accent); text-transform:uppercase; letter-spacing:.04em; font-weight:600;}
+.quiz-nav{display:flex; justify-content:space-between; align-items:center; margin-top:var(--s-6); gap:12px;}
+.quiz-back{font-family:var(--f-mono); font-size:14.4px; text-transform:uppercase; letter-spacing:.05em; color:var(--stone); background:none; border:none; cursor:pointer; padding:8px 0;}
+.quiz-back:hover{color:var(--graphite);}
+.quiz-contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:var(--s-5);}
+.quiz-contact-grid input{padding:14px; border:1px solid var(--border); font-size:16.8px; font-family:var(--f-body); width:100%;}
+.quiz-contact-grid input:focus{border-color:var(--accent); outline:none;}
+.quiz-consent{font-size:13.8px; color:var(--stone); margin-top:14px; line-height:1.6;}
+.quiz-done{display:none; text-align:center; padding:var(--s-8) var(--s-6);}
+.quiz-done.active{display:block;}
+.quiz-done h3{font-size:28.8px; font-weight:300; margin-bottom:10px;}
+.quiz-done p{color:var(--ink-70); font-size:16.8px;}
+.quiz-done .done-check{width:56px; height:56px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; margin:0 auto 18px; font-size:31.2px; animation:popIn .4s var(--ease);}
+@keyframes popIn{from{transform:scale(.4); opacity:0;} to{transform:scale(1); opacity:1;}}
+.quiz-summary{border:1px dashed var(--border-strong); background:var(--sand-deep); padding:16px 18px; margin-bottom:20px; cursor:pointer; position:relative; transition:border-color .18s var(--ease), background .18s var(--ease);}
+.quiz-summary:hover{border-color:var(--accent); background:var(--accent-soft);}
+.quiz-summary:active{transform:scale(.995);}
+.quiz-summary-label{display:flex; align-items:center; justify-content:space-between; gap:10px; font-family:var(--f-mono); font-size:12.6px; text-transform:uppercase; letter-spacing:.05em; color:var(--stone); margin-bottom:10px;}
+.quiz-summary-copy-hint{color:var(--accent); font-weight:600;}
+.quiz-summary-copy-hint.copied{color:#1a8a4a;}
+.quiz-summary-text{font-size:16.2px; color:var(--ink-70); line-height:1.8; white-space:pre-line;}
+
+/* ============ КАТЕГОРИИ ============ */
+.cat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:var(--s-5);}
+.cat-card{position:relative; overflow:hidden; border:1px solid var(--border); background:var(--white); cursor:pointer; display:block; transition:transform .25s var(--ease), box-shadow .25s var(--ease);}
+.cat-card:hover{transform:translateY(-4px); box-shadow:0 20px 40px rgba(15,23,36,.12);}
+.cat-card .ph{aspect-ratio:5/4;}
+.cat-card .cat-label{padding:16px; display:flex; flex-direction:column; gap:10px;}
+.cat-card .cat-label-top{display:flex; align-items:center; justify-content:space-between; gap:10px;}
+.cat-card h4{font-size:18px; font-weight:500;}
+.cat-card p{font-size:14.4px; color:var(--stone); line-height:1.6;}
+.cat-card .cat-arrow{font-family:var(--f-mono); font-size:16.8px; color:#fff; background:var(--accent); width:26px; height:26px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:transform .2s var(--ease);}
+.cat-card:hover .cat-arrow{transform:translateX(3px);}
+
+/* ============ УСЛУГИ ============ */
+.svc-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--border); border:1px solid var(--border);}
+.svc-card{background:var(--white); padding:var(--s-6); display:flex; flex-direction:column; gap:12px; transition:background .2s var(--ease), transform .2s var(--ease);}
+.svc-card:hover{background:var(--accent-soft); transform:translateY(-3px);}
+.svc-card .svc-num{font-family:var(--f-mono); font-size:13.2px; color:var(--accent); font-weight:600;}
+.svc-card h4{font-size:18.6px; font-weight:500; line-height:1.4;}
+.svc-card p{font-size:15px; color:var(--stone); line-height:1.6;}
+
+/* ============ БОЛЬШОЙ БЛОК ПРЕИМУЩЕСТВ ============ */
+.adv-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--border); border:1px solid var(--border);}
+.adv-item{background:var(--white); padding:var(--s-6); display:flex; flex-direction:column; gap:10px; transition:background .2s var(--ease), transform .2s var(--ease);}
+.adv-item:hover{background:var(--accent-soft); transform:translateY(-3px);}
+.adv-item .adv-num{font-family:var(--f-mono); font-size:13.2px; color:var(--accent); font-weight:600;}
+.adv-item h3{font-size:19.2px; font-weight:500; line-height:1.35;}
+.adv-item p{font-size:15px; color:var(--ink-70); line-height:1.6;}
+
+/* ============ ВИДЕО + ФОТО ДОКАЗАТЕЛЬСТВА ============ */
+.proof-tabs{display:flex; gap:10px; margin-bottom:var(--s-6);}
+.proof-tab{border:1px solid var(--border-strong); padding:10px 18px; font-family:var(--f-mono); font-size:13.2px; text-transform:uppercase; letter-spacing:.04em; background:transparent; cursor:pointer;}
+.proof-tab.active{background:var(--graphite); color:var(--sand);}
+.video-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:var(--s-5);}
+.video-item{position:relative; display:block; width:100%; padding:0; border:0; background:none; text-align:left; font:inherit; cursor:pointer;}
+.video-item .ph-video{margin-bottom:8px; position:relative;}
+.video-item p{font-family:var(--f-mono); font-size:13.2px; color:var(--stone); margin:0;}
+.video-grid.js-hidden-group{display:none;}
+
+.video-modal-overlay{display:none; position:fixed; inset:0; background:rgba(8,10,16,.88); z-index:110; align-items:center; justify-content:center; padding:20px;}
+.video-modal-overlay.open{display:flex;}
+.video-modal-box{position:relative; width:100%; max-width:900px; aspect-ratio:16/9; background:#000;}
+.video-modal-box iframe{width:100%; height:100%; border:0; display:block;}
+.video-modal-close{position:absolute; top:-44px; right:0; background:none; border:1px solid rgba(255,255,255,.4); color:#fff; width:36px; height:36px; font-size:19.2px; cursor:pointer;}
+.video-modal-close:hover{background:#fff; color:#000;}
+@media (max-width:760px){
+  .video-modal-box{max-width:100%;}
+  .video-modal-close{top:-40px; width:32px; height:32px; font-size:16.8px;}
+}
+
+/* ============ ГЕОГРАФИЯ ============ */
+.area-grid{display:grid; grid-template-columns:1fr 1fr; gap:var(--s-9); align-items:center;}
+.area-list{list-style:none; padding:0; columns:2; column-gap:var(--s-5); margin:var(--s-6) 0;}
+.area-list li{padding:8px 0; font-family:var(--f-mono); font-size:15.6px; border-bottom:1px solid var(--border); color:var(--ink-70);}
+.map-ph{aspect-ratio:4/3.3; position:relative; border:1px solid var(--border); overflow:hidden; background:var(--sand-deep);}
+.map-ph iframe{width:100%; height:100%; border:0; display:block; filter:grayscale(.15);}
+.map-full-link{position:absolute; right:12px; bottom:12px; z-index:2; background:var(--accent); color:#fff!important; font-family:var(--f-mono); font-size:13.2px; text-transform:uppercase; letter-spacing:.04em; padding:9px 14px; text-decoration:none!important;}
+.map-full-link:hover{background:#E8480E; transform:none;}
+
+/* ============ ПРОЦЕСС (шаги) ============ */
+.steps-row{display:grid; grid-template-columns:repeat(6,1fr); gap:1px; background:var(--border); border:1px solid var(--border);}
+.step{background:var(--white); padding:var(--s-6); display:flex; flex-direction:column; gap:10px; transition:background .2s var(--ease);}
+.step:hover{background:var(--accent-soft);}
+.step .num{font-family:var(--f-mono); font-size:28.8px; font-weight:300; color:var(--accent);}
+.step h3{font-size:15.6px; font-weight:600; text-transform:uppercase; letter-spacing:.02em; line-height:1.35;}
+.step p{font-size:14.4px; color:var(--stone); line-height:1.6;}
+
+/* ============ ПОРТФОЛИО ============ */
+.filter-row{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:var(--s-6);}
+.filter-pill{border:1px solid var(--border-strong); padding:9px 16px; font-family:var(--f-mono); font-size:13.2px; text-transform:uppercase; letter-spacing:.03em; font-weight:400; cursor:pointer; background:transparent;}
+.filter-pill.active{background:var(--accent); color:#fff; border-color:var(--accent);}
+.filter-pill:hover:not(.active){border-color:var(--accent); color:var(--accent);}
+.portfolio-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:var(--s-5);}
+.portfolio-item{border:1px solid var(--border); background:var(--white); overflow:hidden; transition:transform .25s var(--ease), box-shadow .25s var(--ease);}
+.portfolio-item:hover{transform:translateY(-4px); box-shadow:0 20px 40px rgba(15,23,36,.12);}
+.portfolio-item .ph{aspect-ratio:4/3;}
+.portfolio-num{position:absolute; top:10px; left:10px; font-family:var(--f-mono); font-size:12.6px; color:#fff; background:var(--graphite); padding:6px 10px; z-index:2;}
+.portfolio-info{padding:14px; display:flex; justify-content:space-between; align-items:flex-start; gap:12px; border-top:1px solid var(--border);}
+.portfolio-info h4{font-size:16.2px; font-weight:600; margin:0 0 5px; line-height:1.35;}
+.portfolio-info .cat{font-family:var(--f-mono); font-size:12px; color:var(--accent); text-transform:uppercase; letter-spacing:.05em; font-weight:600;}
+.portfolio-item.js-extra{display:none;}
+.portfolio-more{margin-top:var(--s-7); text-align:center;}
+
+/* ============ ОТЗЫВЫ ============ */
+.rating-band{display:flex; gap:var(--s-8); margin:var(--s-6) 0 var(--s-7); border-top:1px solid var(--border-strong); border-bottom:1px solid var(--border); padding:var(--s-5) 0;}
+.review-pages{position:relative;}
+.review-page{display:none; grid-template-columns:repeat(4,minmax(0,1fr)); grid-template-rows:repeat(2,minmax(0,1fr)); gap:var(--s-5);}
+.review-page.is-active{display:grid;}
+.review-card{border:1px solid var(--border); padding:var(--s-6); display:flex; flex-direction:column; min-width:0; height:100%; background:var(--white); transition:transform .2s var(--ease), box-shadow .2s var(--ease), border-color .2s var(--ease);}
+.review-card:hover{transform:translateY(-3px); box-shadow:0 16px 32px rgba(15,23,36,.1); border-color:var(--accent);}
+.review-card .quote-mark{font-family:var(--f-mono); font-size:31.2px; color:var(--accent-2); line-height:1; margin-bottom:var(--s-3);}
+.review-head{display:flex; gap:12px; align-items:center; margin-top:auto; padding-top:var(--s-5);}
+.review-head .stars{font-family:var(--f-mono); font-size:13.2px; color:var(--accent);}
+.review-name{font-weight:500; font-size:15.6px;}
+.review-text{font-size:15.6px; color:var(--ink-70); line-height:1.65; flex-grow:1;}
+.review-meta{font-family:var(--f-mono); font-size:12.6px; color:var(--stone); margin-top:12px; text-transform:uppercase; letter-spacing:.03em;}
+.reviews-controls{display:flex; align-items:center; justify-content:center; gap:18px; margin-top:var(--s-6);}
+.review-nav{width:42px; height:42px; padding:0; border:1px solid var(--border-strong); background:var(--white); color:var(--graphite); font-size:21.6px; line-height:1; transition:background .18s var(--ease), color .18s var(--ease), border-color .18s var(--ease);}
+.review-nav:hover{background:var(--accent); color:#fff; border-color:var(--accent);}
+.review-dots{display:flex; align-items:center; justify-content:center; gap:7px; flex-wrap:wrap;}
+.review-dot{width:7px; height:7px; padding:0; border:0; border-radius:50%; background:var(--border-strong); opacity:.3;}
+.review-dot.is-active{opacity:1; transform:scale(1.25); background:var(--accent);}
+
+/* ============ ДОП. SEO ТЕКСТ ============ */
+.info-grid{display:grid; grid-template-columns:.85fr 1.15fr; gap:var(--s-9); align-items:start;}
+.info-copy p + p{margin-top:16px;}
+.info-copy p{font-size:16.8px; color:var(--ink-70); line-height:1.8;}
+.info-copy h3{font-size:20.4px; font-weight:500; margin-top:28px; margin-bottom:10px;}
+.info-visual .ph-photo{aspect-ratio:3/4; max-height:520px; width:100%;}
+
+/* ============ ГАЛЕРЕЯ РАБОТ (без подписей) ============ */
+.gallery-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:var(--s-4);}
+.gallery-item{border:1px solid var(--border); background:var(--white); overflow:hidden; transition:transform .25s var(--ease), box-shadow .25s var(--ease);}
+.gallery-item:hover{transform:translateY(-4px); box-shadow:0 20px 40px rgba(15,23,36,.12);}
+.gallery-item .ph{aspect-ratio:4/3;}
+@media (max-width:1080px){
+  .gallery-grid{grid-template-columns:repeat(3,1fr);}
+}
+@media (max-width:760px){
+  .gallery-grid{grid-template-columns:repeat(2,1fr)!important; gap:8px!important;}
+}
+
+/* ============ FAQ ============ */
+.faq-list{max-width:900px;}
+.faq-item{border-bottom:1px solid var(--border); padding:var(--s-4) 0;}
+.faq-q{display:flex; align-items:center; justify-content:space-between; gap:20px; cursor:pointer; background:none; border:none; width:100%; text-align:left; padding:0; font-family:var(--f-body);}
+.faq-q h3{font-size:18px; font-weight:400; margin:0;}
+.faq-q .plus{font-family:var(--f-mono); font-size:19.2px; font-weight:400; flex-shrink:0; transition:transform .3s var(--ease); color:var(--accent);}
+.faq-item.open .faq-q .plus{transform:rotate(45deg);}
+.faq-a{max-height:0; overflow:hidden; transition:max-height .35s var(--ease);}
+.faq-item.open .faq-a{max-height:320px;}
+.faq-a p{font-size:16.2px; color:var(--ink-70); padding-top:var(--s-3); line-height:1.7; max-width:64ch;}
+
+/* ============ FINAL CTA ============ */
+.final-cta{overflow:hidden; position:relative; background:var(--graphite);}
+.final-cta .wrap{position:relative; z-index:1;}
+.final-cta h2{font-size:clamp(33.6px,4.32vw,60px); font-weight:300; max-width:16ch; line-height:1.08;}
+.final-grid{display:grid; grid-template-columns:1.05fr .95fr; gap:var(--s-9); align-items:end;}
+.final-box{border:1px solid #334155; padding:var(--s-6); background:rgba(15,23,36,.4);}
+.final-note{font-family:var(--f-mono); font-size:13.2px; color:#64748B; text-transform:uppercase; letter-spacing:.03em; margin-bottom:var(--s-5); padding-bottom:var(--s-5); border-bottom:1px solid #334155;}
+.final-contact{display:flex; gap:12px; flex-wrap:wrap;}
+.final-cta .btn-outline{background:transparent!important; color:#fff!important; border-color:#334155!important;}
+.final-cta .btn-outline:hover{background:#fff!important; color:var(--graphite)!important; border-color:#fff!important;}
+
+/* ============ FOOTER ============ */
+footer{padding:var(--s-8) 0 var(--s-6); font-size:15.6px; color:var(--stone); background:var(--sand);}
+.footer-statement{font-family:var(--f-display); font-size:clamp(28.8px,4.8vw,57.6px); font-weight:300; line-height:1.15; max-width:20ch; margin-bottom:var(--s-8); letter-spacing:-.01em;}
+.footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:var(--s-6); padding-bottom:var(--s-7); border-bottom:1px solid var(--border);}
+.footer-grid h4{color:var(--graphite); font-family:var(--f-mono); font-size:12.6px; text-transform:uppercase; letter-spacing:.06em; margin-bottom:var(--s-4); font-weight:500;}
+.footer-grid ul{list-style:none; padding:0; margin:0;}
+.footer-grid li{margin-bottom:9px;}
+.footer-grid p{line-height:1.7;}
+.footer-policies{padding-top:var(--s-6);}
+.policy-links{display:flex; gap:14px 24px; flex-wrap:wrap; margin-bottom:var(--s-6);}
+.policy-links button{background:none; border:none; padding:0; font:inherit; font-family:var(--f-mono); font-size:13.2px; color:var(--stone); text-decoration:underline; text-underline-offset:3px; cursor:pointer;}
+.policy-links button:hover{color:var(--accent);}
+.footer-bottom{font-family:var(--f-mono); font-size:12.6px; color:var(--stone); display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;}
+
+/* ============ MODAL ============ */
+.modal-overlay{display:none; position:fixed; inset:0; background:rgba(15,23,36,.72); z-index:100; align-items:center; justify-content:center; padding:20px;}
+.modal-overlay.open{display:flex;}
+.modal-box{background:var(--sand); max-width:640px; width:100%; max-height:80vh; overflow-y:auto; border:1px solid var(--border-strong); padding:var(--s-7);}
+.modal-box h3{margin-top:0; font-size:20.4px; font-weight:400; margin-bottom:var(--s-5); padding-right:40px;}
+.modal-box p{font-size:15.6px; color:var(--ink-70); line-height:1.75; margin-bottom:14px;}
+.modal-close{float:right; background:none; border:1px solid var(--border); width:30px; height:30px; cursor:pointer; font-size:15.6px;}
+.modal-close:hover{border-color:var(--accent); color:var(--accent);}
+
+/* ============ COOKIE BANNER ============ */
+.cookie-banner{display:none; position:fixed; left:0; right:0; bottom:0; background:var(--graphite); color:var(--sand); z-index:90; padding:var(--s-5) 0;}
+.cookie-banner.show{display:block;}
+.cookie-inner{display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap;}
+.cookie-inner p{margin:0; font-size:14.4px; color:#CBD5E1; max-width:700px; line-height:1.6;}
+
+/* ============ RESRONSIVE ============ */
+@media (max-width:1080px){
+  .hero-grid, .area-grid, .info-grid, .quiz-top{grid-template-columns:1fr;}
+  .quick-grid, .cat-grid, .svc-grid, .adv-grid, .video-grid, .portfolio-grid{grid-template-columns:repeat(2,1fr);}
+  .steps-row{grid-template-columns:repeat(3,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .final-grid{grid-template-columns:1fr; gap:36px;}
+  .quiz-options{grid-template-columns:repeat(2,1fr);}
+  nav.main-nav{display:none;}
+}
+@media (max-width:760px){
+  .header-cta .phone-block, .header-cta .btn-max, .header-cta .btn{display:none!important;}
+  .logo span{display:none!important;}
+  .menu-trigger{display:flex;}
+  .wrap{padding:0 14px;}
+  .header-inner{padding:12px 8px; min-height:56px;}
+  .hero{padding-top:52px; border-bottom:0;}
+  .hero-copy h1{font-size:clamp(28.8px,8.4vw,38.4px);}
+  .hero-visual{order:-1;}
+  .hero-visual .ph-photo{max-height:none; aspect-ratio:4/3;}
+  .hero-btns{flex-direction:column;}
+  .hero-btns .btn{width:100%;}
+  .stat-band{grid-template-columns:repeat(3,1fr); gap:10px;}
+  .stat-band .stat{padding:6px 8px 6px 0;}
+  .stat b{font-size:26.4px;}
+  .quick-grid, .cat-grid, .svc-grid, .adv-grid, .video-grid, .portfolio-grid, .review-page{grid-template-columns:repeat(2,1fr)!important; gap:8px!important;}
+  .review-page{grid-template-rows:repeat(2,minmax(0,1fr));}
+  .review-card{padding:14px;}
+  .review-text{font-size:13.8px;}
+  .steps-row{grid-template-columns:repeat(2,1fr);}
+  .quiz-body{padding:var(--s-5);}
+  .quiz-intro{padding:var(--s-6);}
+  .quiz-options{grid-template-columns:repeat(2,1fr); gap:8px;}
+  .quiz-opt{padding:10px; font-size:14.4px;}
+  .quiz-contact-grid{grid-template-columns:1fr;}
+  .info-grid{gap:28px;}
+  .area-list{columns:1;}
+  .footer-grid{grid-template-columns:1fr; gap:24px;}
+  .map-ph{aspect-ratio:4/3; margin-top:8px;}
+}
+
+/* ===== УНИКАЛИЗАЦИЯ НОВОЙ ВЕРСИИ: сохраняем исходную систему, меняем акценты ===== */
+:root{
+  --clay:#17324D;
+  --btn-blue:#17324D;
+  --btn-blue-hover:#234A70;
+  --accent:#D79A2B;
+  --accent-2:#F0BE55;
+  --accent-soft:#FFF6E5;
+  --radius:2px;
+}
+.hero{background:#FFFFFF!important;}
+.hero-grid{gap:clamp(32px,5vw,72px);}
+.hero-copy h1{font-weight:400; letter-spacing:-.025em;}
+.hero-visual .ph-photo{box-shadow:18px 18px 0 rgba(215,154,43,.12);}
+.quick-item,.svc-card,.adv-item{transition:background .2s var(--ease),transform .2s var(--ease),box-shadow .2s var(--ease);}
+.quick-item:hover,.svc-card:hover,.adv-item:hover{box-shadow:0 10px 24px rgba(23,50,77,.07);}
+.cat-card{border-top:3px solid transparent;}
+.cat-card:hover{border-top-color:var(--accent);}
+.cat-card .cat-arrow{border-radius:2px;}
+.quiz-wrap{box-shadow:0 18px 50px rgba(23,50,77,.10);}
+.final-cta{background:linear-gradient(120deg,#0F1724,#17324D);}
+.logo .mark{background:var(--accent);border-color:var(--accent);}
+.badge-hot{background:var(--accent);}
+.btn-accent{background:var(--accent)!important;border-color:var(--accent)!important;}
+.btn-accent:hover{background:#BD7F16!important;border-color:#BD7F16!important;}
+@media (min-width:1081px){
+  .cat-grid{grid-template-columns:repeat(3,1fr);}
+  .svc-grid{grid-template-columns:repeat(3,1fr);}
+  .adv-grid{grid-template-columns:repeat(4,1fr);}
+}
+
+
+/* Старое меню страниц заменено на компактный dropdown в шапке. */
+.quiz-comment{width:100%;min-height:82px;margin-top:14px;padding:14px 16px;border:1px solid var(--border);border-radius:12px;background:#FFFFFF;font:inherit;resize:vertical}
+.quiz-comment:focus{outline:2px solid rgba(255,90,31,.3);border-color:#FF5A1F}
+</style>
+<style>
+/* Финальная настройка: компактные варианты и форма калькулятора */
+.quiz-options{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;}
+.quiz-options.cols-2{grid-template-columns:repeat(2,minmax(0,1fr));}
+.quiz-opt{padding:13px 14px;font-size:16.8px;line-height:1.25;min-height:46px;}
+.quiz-contact-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0 10px;}
+.quiz-contact-form input,.quiz-contact-form textarea{width:100%;border:1px solid var(--border);background:#fff;padding:14px 15px;font:inherit;outline:none;}
+.quiz-contact-form textarea{grid-column:1/-1;resize:vertical;min-height:90px;}
+.quiz-contact-form button{grid-column:1/-1;justify-self:start;border:0;cursor:pointer;}
+.quiz-contact-form .form-note{grid-column:1/-1;margin:0;font-size:14.4px;color:var(--stone);}
+@media(max-width:900px){.quiz-options{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:560px){.quiz-options,.quiz-options.cols-2,.quiz-contact-form{grid-template-columns:1fr;}.quiz-contact-form textarea,.quiz-contact-form button,.quiz-contact-form .form-note{grid-column:auto;}.quiz-contact-form button{width:100%;}}
+
+/* Форматы работы: четыре понятных блока в один ряд на десктопе */
+.svc-grid{grid-template-columns:repeat(4,minmax(0,1fr));}
+.svc-grid .svc-card{min-width:0;}
+@media (max-width: 980px){.svc-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (max-width: 620px){.svc-grid{grid-template-columns:1fr;}}
+
+#quiz .btn,#quiz .btn:hover,#quiz .btn:focus-visible{color:#fff!important;}
+#quiz .quiz-opt{color:#202124!important;}
+</style>
+<!-- Disabled conflicting monochrome theme:
+/* Строгая монохромная палитра: чёрный, белый, графит */
+:root{
+  --sand:#FFFFFF;
+  --sand-deep:#F1F2F3;
+  --graphite:#202124;
+  --clay:#111111;
+  --btn-blue:#111111;
+  --btn-blue-hover:#303236;
+  --accent:#33363A;
+  --accent-2:#D8DADD;
+  --accent-soft:#F1F2F3;
+  --olive:#55595F;
+  --stone:#73777D;
+  --ink-70:#3F4348;
+  --border:#D9DCE0;
+  --border-strong:#202124;
+  --white:#FFFFFF;
+  --radius:0;
+}
+.hero{background:#FFFFFF!important;}
+.final-cta{background:#202124!important;}
+.logo .mark,.btn-accent,.badge-hot,.cat-card .cat-arrow,
+.hero-checks li::before,.quick-item .qi-ico{
+  background:#202124!important;border-color:#202124!important;color:#FFFFFF!important;
+}
+.btn-accent:hover{background:#3B3E42!important;border-color:#3B3E42!important;}
+.eyebrow,.text-link:hover,.faq-q .plus,.portfolio-info .cat,
+.svc-card .svc-num,.adv-item .adv-num,.step .num{
+  color:#33363A!important;
+}
+.eyebrow::before{background:#33363A!important;}
+.dark .eyebrow,.dark .eyebrow::before{color:#D8DADD!important;background:#D8DADD!important;}
+.quick-item:hover,.svc-card:hover,.adv-item:hover,.cat-card:hover,
+.quiz-opt:hover,.quiz-opt.selected,.dropdown a:hover{
+  background:#F1F2F3!important;
+}
+.quiz-opt:hover,.quiz-opt.selected{border-color:#55595F!important;}
+.filter-pill.active{background:#202124!important;border-color:#202124!important;color:#FFFFFF!important;}
+.badge-hot{box-shadow:none!important;}
+.play-badge{background:rgba(32,33,36,.82)!important;box-shadow:none!important;}
+.map-full-link{background:#202124!important;}
+.map-full-link:hover{background:#3B3E42!important;}
+::selection{background:#202124!important;color:#FFFFFF!important;}
+a:focus-visible,:focus-visible{outline-color:#55595F!important;}
+.btn-pulse{animation:none!important;box-shadow:none!important;}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;}}
+ -->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style id="visual-fixes-sept-2026">
+:root{--f-body:'Inter',Arial,sans-serif;--f-head:'Roboto Condensed','Inter',sans-serif}
+html,body,button,input,textarea,select{font-family:'Inter',Arial,sans-serif!important}
+h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-serif!important}
+#quiz .quiz-wrap{background:#fff!important;color:#202124!important;border:1px solid #D9DCE0!important}
+#quiz .quiz-intro,#quiz .quiz-intro h2,#quiz .quiz-intro p,#quiz .quiz-question,#quiz .quiz-progress-label,#quiz .quiz-step,#quiz .quiz-step p,#quiz .quiz-step label{color:#202124!important}
+#quiz .eyebrow{color:#55595F!important}
+#quiz .quiz-opt{background:#F1F2F3!important;color:#202124!important;border:1px solid #D9DCE0!important}
+#quiz .quiz-opt:hover,#quiz .quiz-opt.selected,#quiz .quiz-opt.active,#quiz .quiz-opt[aria-pressed="true"]{background:#202124!important;color:#fff!important;border-color:#202124!important}
+#quiz .quiz-progress-bar{background:#E4E6E8!important}#quiz .quiz-progress-fill{background:#202124!important}
+#quiz .quiz-contact-form{background:#fff!important;border:0!important;box-shadow:none!important}
+#quiz .quiz-contact-form:before,#quiz .quiz-contact-form:after,#quiz .quiz-body:before{display:none!important;content:none!important}
+#quiz .quiz-contact-form input,#quiz .quiz-contact-form textarea{background:#fff!important;color:#202124!important;border:1px solid #B9BEC4!important}
+#quiz .quiz-contact-form input::placeholder,#quiz .quiz-contact-form textarea::placeholder{color:#73777D!important;opacity:1!important}
+#quiz .quiz-contact-form .form-note{color:#62676D!important}
+#quiz .quiz-contact-form button{background:#202124!important;color:#fff!important}
+#quiz .quiz-nav button{color:#202124!important}
+#categories .cat-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:980px){#categories .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){#categories .cat-grid{grid-template-columns:1fr}}
+</style>
+
+<style id="final-cta-form-fix">
+/* Улучшенный финальный блок и простая форма */
+.final-box{padding:34px;background:#17181B!important;border:1px solid #3B3E42!important;box-shadow:none!important;}
+.final-form-head{padding-bottom:22px;margin-bottom:22px;border-bottom:1px solid #3B3E42;}
+.final-form-kicker{display:block;font-family:'Roboto Condensed','Inter',sans-serif;font-size:13.2px;line-height:1;text-transform:uppercase;letter-spacing:.12em;color:#AEB2B8;margin-bottom:12px;}
+.final-form-head h3{font-size:clamp(26.4px,2.64vw,36px);line-height:1.08;color:#fff;margin:0 0 10px;}
+.final-form-head p{font-size:15.6px;line-height:1.65;color:#BFC3C8;max-width:52ch;}
+.final-contact-form{display:flex;flex-direction:column;gap:13px;}
+.final-form-row{display:grid;grid-template-columns:1fr 1fr;gap:13px;}
+.final-contact-form label{display:flex;flex-direction:column;gap:7px;}
+.final-contact-form label>span{font-family:'Roboto Condensed','Inter',sans-serif;font-size:13.2px;text-transform:uppercase;letter-spacing:.08em;color:#AEB2B8;}
+.final-contact-form input,.final-contact-form textarea{width:100%;box-sizing:border-box;background:#202124;color:#fff;border:1px solid #45484D;padding:14px 15px;font:16.8px/1.45 'Inter',Arial,sans-serif;outline:none;transition:border-color .18s,background .18s;}
+.final-contact-form textarea{min-height:88px;resize:vertical;}
+.final-contact-form input::placeholder,.final-contact-form textarea::placeholder{color:#777C83;opacity:1;}
+.final-contact-form input:focus,.final-contact-form textarea:focus{border-color:#D8DADD;background:#24262A;}
+.final-contact-form .btn{align-self:flex-start;margin-top:2px;}
+.final-form-note{font-size:13.2px!important;line-height:1.5!important;color:#7F848B!important;margin:0!important;}
+@media(max-width:760px){
+  .final-box{padding:24px;}
+  .final-form-row{grid-template-columns:1fr;}
+  .final-contact-form .btn{width:100%;}
+}
+</style>
+<style id="no-rounded-corners">
+/* Полностью убираем скругления по всему сайту */
+*, *::before, *::after { border-radius:0!important; }
+</style>
+<style id="calculator-left-white">
+/* Калькулятор: текст в левой части белый */
+#quiz .quiz-intro,
+#quiz .quiz-intro h2,
+#quiz .quiz-intro p,
+#quiz .quiz-intro .eyebrow,
+#quiz .quiz-intro .eyebrow::before { color:#fff!important; }
+#quiz .quiz-intro .eyebrow::before { background:#fff!important; }
+</style>
+
+<style id="quiz-align-clean">
+/* Выравниваем левую часть калькулятора по верхнему краю формы и убираем серую линию */
+#quiz .quiz-intro{justify-content:flex-start!important;padding-top:var(--s-7)!important;}
+#quiz .quiz-intro .eyebrow{display:none!important;}
+#quiz .quiz-intro .eyebrow::before{display:none!important;}
+</style>
+
+<style id="final-cta-alignment-fix">
+/* Финальный блок: текст слева по верхнему краю формы, серую полоску убрать */
+#contacts .final-grid{
+  align-items:start!important;
+}
+#contacts .final-grid > .reveal{
+  padding-top:0!important;
+  margin-top:0!important;
+}
+#contacts .final-grid > .reveal > .eyebrow{
+  display:none!important;
+}
+#contacts .final-grid > .reveal > .eyebrow::before{
+  display:none!important;
+}
+#contacts .final-grid > .reveal h2{
+  margin-top:0!important;
+}
+</style>
+
+<style id="final-form-top-spacing">
+/* Возвращаем внутренний верхний отступ формы после выравнивания блока */
+#contacts .final-box{padding-top:34px!important;}
+</style>
+
+
+
+<style id="calculator-photo-placeholders">
+/* Временные места под фотографии в калькуляторе */
+#quiz .quiz-opt .qo-photo.qo-placeholder{width:100%;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:#F3F4F6;border:1px dashed #B9BEC4;color:#7A8088;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;overflow:hidden;}
+#quiz .quiz-opt .qo-placeholder span{opacity:.8;}
+@media (min-width:981px){#quiz .quiz-options .quiz-opt{padding-top:16px!important;min-height:0;}}
+</style>
+
+
+<style id="mobile-calculator-and-white-blocks">
+/* Белая подложка у всех сеток и карточечных блоков */
+.quick-grid,.cat-grid,.svc-grid,.adv-grid,.video-grid,.portfolio-grid,.steps-row,.review-page{
+  background:#fff!important;
+}
+
+/* Мобильный калькулятор: компактные варианты без фотографий */
+@media (max-width:760px){
+  #quiz .quiz-body{padding:16px!important;}
+  #quiz .quiz-intro{padding:20px!important;}
+  #quiz .quiz-options,#quiz .quiz-options.cols-2{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:6px!important;
+  }
+  #quiz .quiz-opt{
+    min-height:0!important;
+    padding:9px 10px!important;
+    font-size:13px!important;
+    line-height:1.25!important;
+    gap:0!important;
+  }
+  #quiz .quiz-opt .qo-photo{display:none!important;}
+  #quiz .quiz-opt.selected::after{font-size:10px!important;margin-top:5px;}
+}
+@media (max-width:480px){
+  #quiz .quiz-options,#quiz .quiz-options.cols-2{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  #quiz .quiz-opt{padding:8px!important;font-size:12.5px!important;}
+}
+</style>
+
+
+<style id="mobile-quiz-and-card-borders">
+/* Калькулятор на телефоне: белые кнопки */
+@media (max-width: 760px){
+  #quiz .quiz-opt,
+  #quiz .quiz-opt:visited{
+    background:#FFFFFF !important;
+    color:#0F1724 !important;
+    border-color:#E2E5EA !important;
+  }
+  #quiz .quiz-opt:hover,
+  #quiz .quiz-opt:focus-visible{
+    background:#FFF1E8 !important;
+    color:#0F1724 !important;
+    border-color:#FF5A1F !important;
+  }
+  #quiz .quiz-opt.selected,
+  #quiz .quiz-opt.active,
+  #quiz .quiz-opt[aria-pressed="true"]{
+    background:#FFF1E8 !important;
+    color:#0F1724 !important;
+    border-color:#FF5A1F !important;
+  }
+  #quiz .quiz-opt.selected::after{color:#2F80FF !important;}
+}
+
+/* Белый фон + отдельная обводка вокруг каждого подблока */
+.adv-grid{
+  background:#fff !important;
+  border:1px solid #D9DCE0 !important;
+  gap:1px !important;
+}
+.adv-item{
+  background:#fff !important;
+  border:1px solid #D9DCE0 !important;
+}
+.adv-item:hover{
+  background:#F1F2F3 !important;
+}
+</style>
+
+<style id="stock-media-fixes">
+.stock-video-card{min-width:0;background:#fff;border:1px solid #d9dce0;overflow:hidden;}
+.stock-video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#111;}
+.stock-video-card p{margin:0;padding:12px 14px;font-size:14px;line-height:1.35;}
+#quiz .quiz-opt .qo-photo{display:block;width:100%;aspect-ratio:4/3;overflow:hidden;background:#f3f4f6;}
+#quiz .quiz-opt .qo-photo img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;}
+@media (max-width:760px){
+  #quiz .quiz-opt .qo-photo{display:block!important;}
+}
+</style>
+
+
+<style id="calculator-white-button-text">
+#quiz .btn,
+#quiz .btn:hover,
+#quiz .btn:focus,
+#quiz .btn:focus-visible,
+#quiz .btn:active,
+#quiz .btn:disabled {
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+}
+#quiz .btn .arrow {
+  color:#fff !important;
+}
+</style>
+
+<style id="compact-calculator-grid">
+@media (min-width: 760px){
+  #quiz .quiz-options,
+  #quiz .options,
+  #quiz .choices{
+    grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  }
+}
+</style>
+
+
+<style id="missing-photo-indicator">
+.ph{position:relative;}
+.ph-label{
+  display:none;
+  position:absolute;
+  inset:0;
+  background:rgba(241,242,243,0.97);
+  border:2px dashed #B9BEC4;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:8px;
+  font-family:var(--f-mono);
+  font-size:12px;
+  color:#73777D;
+  text-align:center;
+  padding:12px;
+  z-index:5;
+  pointer-events:none;
+}
+.ph-label span{
+  display:block;
+  font-size:13px;
+  font-weight:600;
+  color:#33363A;
+  word-break:break-all;
+}
+</style>
+<script>
+(function(){
+  document.addEventListener('DOMContentLoaded', function(){
+    // Показываем подпись с путём к фото, если картинка не загрузилась
+    document.querySelectorAll('.ph img').forEach(function(img){
+      var ph = img.closest('.ph');
+      var src = img.getAttribute('src');
+      var label = document.createElement('div');
+      label.className = 'ph-label';
+      label.innerHTML = '<span>📁 ' + src + '</span><em>Фото ещё не добавлено</em>';
+      ph.appendChild(label);
+      function check(){
+        if(!img.complete || img.naturalWidth === 0){
+          label.style.display = 'flex';
+        } else {
+          label.style.display = 'none';
+        }
+      }
+      img.addEventListener('error', function(){ label.style.display='flex'; });
+      img.addEventListener('load', function(){ if(img.naturalWidth===0){ label.style.display='flex'; } else { label.style.display='none'; } });
+      check();
+    });
+    // Видео: canvas-превью первого кадра
+    document.querySelectorAll('video.stock-video').forEach(function(video){
+      var canvas = document.createElement('canvas');
+      var captured = false;
+      function captureFrame(){
+        if(captured) return;
+        try{
+          canvas.width = video.videoWidth || 640;
+          canvas.height = video.videoHeight || 360;
+          canvas.getContext('2d').drawImage(video,0,0,canvas.width,canvas.height);
+          var dataUrl = canvas.toDataURL('image/jpeg',0.85);
+          if(dataUrl && dataUrl !== 'data:,'){
+            video.setAttribute('poster', dataUrl);
+            captured = true;
+          }
+        }catch(e){}
+      }
+      video.addEventListener('loadeddata', captureFrame);
+      video.addEventListener('timeupdate', captureFrame);
+      video.addEventListener('seeked', captureFrame);
+      // Seek to 0 to trigger loadeddata
+      if(video.readyState >= 2){ captureFrame(); }
+    });
+  });
+})();
+</script>
+
+
+<style id="header-contact-buttons">
+.header-contact-buttons{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.header-contact-buttons .header-max-btn{
+  background:#1E5EFF !important;
+  border-color:#1E5EFF !important;
+  color:#fff !important;
+  text-decoration:none !important;
+}
+.header-contact-buttons .header-phone-btn{
+  background:transparent !important;
+  border:1px solid #111 !important;
+  color:#111 !important;
+  text-decoration:none !important;
+  white-space:nowrap;
+}
+.header-contact-buttons .header-phone-btn:hover,
+.header-contact-buttons .header-phone-btn:focus-visible{
+  background:#111 !important;
+  color:#fff !important;
+}
+@media (max-width: 767px){
+  .header-contact-buttons{width:100%; gap:8px;}
+  .header-contact-buttons .btn{flex:1 1 0; min-width:0;}
+}
+</style>
+
+
+<style id="photo-lightbox-styles">
+.photo-clickable{cursor:zoom-in!important;}
+.photo-lightbox{position:fixed;inset:0;z-index:99999;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(0,0,0,.88);}
+.photo-lightbox.open{display:flex;}
+.photo-lightbox img{max-width:96vw;max-height:90vh;width:auto;height:auto;object-fit:contain;border-radius:8px;cursor:zoom-out;}
+.photo-lightbox-close{position:absolute;top:14px;right:18px;width:46px;height:46px;border:0;border-radius:50%;background:rgba(255,255,255,.16);color:#fff;font-size:34px;cursor:pointer;}
+.photo-lightbox-hint{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.8);font-size:14px;text-align:center;}
+@media(max-width:767px){.photo-lightbox{padding:12px}.photo-lightbox img{max-height:84vh}.photo-lightbox-close{top:10px;right:10px}}
+</style>
+
+
+<style id="white-background-green-call-fixes">
+  /* Белый фон страницы */
+  html, body {
+    background: #fff !important;
+  }
+  .hero,
+  footer,
+  .mobile-menu,
+  .final-cta,
+  .dark,
+  .quiz-intro {
+    background: #fff !important;
+    color: var(--graphite) !important;
+  }
+  .final-cta h2,
+  .final-cta .lead,
+  .final-cta p,
+  .quiz-intro h2,
+  .quiz-intro p {
+    color: var(--graphite) !important;
+  }
+  .final-box {
+    background: #fff !important;
+  }
+
+  /* Все кнопки, ведущие на звонок, — зелёные */
+  a.btn[href^="tel:"] {
+    background: #22A447 !important;
+    border-color: #22A447 !important;
+    color: #fff !important;
+  }
+  a.btn[href^="tel:"]:hover,
+  a.btn[href^="tel:"]:focus-visible {
+    background: #18863A !important;
+    border-color: #18863A !important;
+    color: #fff !important;
+    box-shadow: 0 10px 24px rgba(34, 164, 71, .22);
+  }
+</style>
+
+
+<style id="stroybrigada365-reference-style">
+/* ===== STYLE OVERRIDE: STROYBRIGADA365 REFERENCE ===== */
+:root{
+  --sb-green:#22a447;
+  --sb-green-dark:#18863a;
+  --sb-green-soft:#eef9f1;
+  --sb-blue:#1e5eff;
+  --sb-ink:#202124;
+  --sb-muted:#6b7078;
+  --sb-line:#e1e4e8;
+  --sb-bg:#fff;
+  --sb-soft:#f6f7f8;
+  --sb-radius:4px;
+  --container:1240px;
+  --edge:clamp(16px,3vw,28px);
+}
+html,body{background:#fff!important;color:var(--sb-ink)!important}
+body{font-family:Inter,Arial,sans-serif!important;font-size:16px;line-height:1.55}
+h1,h2,h3,h4,h5,h6{font-family:'Roboto Condensed',Inter,Arial,sans-serif!important;font-weight:700!important;letter-spacing:-.025em!important}
+.wrap{max-width:var(--container)!important}
+section{background:#fff}
+.pad-lg{padding:clamp(46px,6vw,84px) 0!important}
+.pad-md{padding:clamp(36px,5vw,64px) 0!important}
+.pad-sm{padding:28px 0!important}
+
+/* Header */
+header{background:#fff!important;border-bottom:1px solid var(--sb-line)!important;box-shadow:0 1px 8px rgba(0,0,0,.03)!important}
+.header-inner{min-height:76px!important;padding-top:10px!important;padding-bottom:10px!important}
+.logo{font-family:'Roboto Condensed',Inter,sans-serif!important;font-weight:800!important;font-size:20px!important;color:var(--sb-ink)!important}
+.logo .mark{background:var(--sb-green)!important;border-color:var(--sb-green)!important;border-radius:3px!important;font-weight:800!important}
+.logo span:last-child{font-family:Inter,Arial,sans-serif!important;color:#777!important;font-size:11px!important}
+nav.main-nav ul{font-size:14px!important;gap:24px!important}
+nav.main-nav a{font-weight:500!important;color:#303238!important}
+nav.main-nav a::after{background:var(--sb-green)!important;height:2px!important}
+.header-cta{gap:9px!important}
+.header-contact-buttons .header-max-btn{background:var(--sb-blue)!important;border-color:var(--sb-blue)!important;border-radius:3px!important;padding:10px 14px!important}
+.header-contact-buttons .header-phone-btn{border-color:#cdd1d6!important;border-radius:3px!important;padding:10px 14px!important}
+
+/* Buttons */
+.btn{font-family:Inter,Arial,sans-serif!important;text-transform:none!important;letter-spacing:0!important;font-weight:700!important;border-radius:3px!important;padding:13px 22px!important;background:var(--sb-green)!important;border-color:var(--sb-green)!important;box-shadow:none!important}
+.btn:hover,.btn:focus-visible{background:var(--sb-green-dark)!important;border-color:var(--sb-green-dark)!important;box-shadow:0 7px 18px rgba(34,164,71,.18)!important}
+.btn-accent{background:var(--sb-green)!important;border-color:var(--sb-green)!important}
+.btn-outline{background:#fff!important;color:var(--sb-ink)!important;border-color:#cfd3d8!important}
+.btn-outline:hover{background:#f5f6f7!important;color:var(--sb-ink)!important;border-color:#aeb3ba!important}
+a.btn[href^="tel:"]{background:var(--sb-green)!important;border-color:var(--sb-green)!important}
+
+/* Typography / section headings */
+.eyebrow{font-family:Inter,Arial,sans-serif!important;font-size:12px!important;font-weight:700!important;color:var(--sb-green)!important;letter-spacing:.07em!important;margin-bottom:10px!important}
+.eyebrow::before{background:var(--sb-green)!important;width:18px!important}
+h2.section-title{font-size:clamp(32px,4vw,48px)!important;line-height:1.05!important;max-width:24ch!important;color:var(--sb-ink)!important}
+.lead{font-size:17px!important;color:#666b72!important;line-height:1.65!important}
+.dark{background:#fff!important;color:var(--sb-ink)!important}
+.dark .lead,.dark .muted{color:#666b72!important}
+
+/* Hero */
+.hero{background:#fff!important;padding-top:110px!important;padding-bottom:45px!important}
+.hero .wrap{position:relative}
+.hero h1{font-size:clamp(42px,5.2vw,68px)!important;line-height:.98!important;max-width:900px!important}
+.hero .hero-grid{gap:42px!important}
+.hero .hero-copy{max-width:700px!important}
+.hero .hero-checks li::before{background:var(--sb-green)!important;color:#fff!important;border-color:var(--sb-green)!important}
+.hero .hero-actions{gap:12px!important}
+.hero .hero-note{color:#737880!important}
+.hero .ph{border:0!important;border-radius:4px!important;background:#f1f3f4!important;box-shadow:none!important}
+.hero .spec-tag{background:#fff!important;color:var(--sb-ink)!important;box-shadow:0 6px 20px rgba(0,0,0,.1)!important;border-radius:3px!important}
+.hero .spec-tag b{color:var(--sb-ink)!important}
+.hero .spec-tag span{color:#777!important}
+
+/* Generic cards */
+.quick-grid,.cat-grid,.svc-grid,.adv-grid,.video-grid,.portfolio-grid,.steps-row,.review-page{background:#fff!important}
+.quick-item,.cat-card,.svc-card,.adv-item,.portfolio-card,.review-card,.video-item{background:#fff!important;border:1px solid var(--sb-line)!important;border-radius:4px!important;box-shadow:none!important}
+.quick-item:hover,.cat-card:hover,.svc-card:hover,.adv-item:hover,.portfolio-card:hover{background:#fff!important;border-color:#bfc5cb!important;box-shadow:0 10px 28px rgba(32,33,36,.07)!important;transform:translateY(-3px)!important}
+.cat-card .cat-arrow{background:var(--sb-green)!important;color:#fff!important}
+.svc-card .svc-num,.adv-item .adv-num,.step .num{color:var(--sb-green)!important}
+
+/* Quiz */
+#quiz{background:#f6f7f8!important}
+#quiz .quiz-wrap{background:#fff!important;border:1px solid var(--sb-line)!important;border-radius:4px!important;box-shadow:0 12px 40px rgba(32,33,36,.06)!important;overflow:hidden}
+#quiz .quiz-intro{background:#fff!important;color:var(--sb-ink)!important}
+#quiz .quiz-intro h2,#quiz .quiz-intro p{color:var(--sb-ink)!important}
+#quiz .quiz-opt{background:#fff!important;border:1px solid #dfe2e6!important;border-radius:3px!important;color:var(--sb-ink)!important}
+#quiz .quiz-opt:hover{background:var(--sb-green-soft)!important;border-color:#9ed8ad!important;color:var(--sb-ink)!important}
+#quiz .quiz-opt.selected,#quiz .quiz-opt.active,#quiz .quiz-opt[aria-pressed="true"]{background:var(--sb-green-soft)!important;border-color:var(--sb-green)!important;color:var(--sb-ink)!important}
+#quiz .quiz-progress-fill{background:var(--sb-green)!important}
+#quiz .quiz-contact-form input,#quiz .quiz-contact-form textarea{border-color:#cfd3d8!important;border-radius:3px!important}
+#quiz .quiz-contact-form button{background:var(--sb-green)!important;border-color:var(--sb-green)!important;border-radius:3px!important}
+
+/* Service / advantages grids */
+.svc-card,.adv-item{padding:24px!important}
+.adv-grid{gap:0!important;border:1px solid var(--sb-line)!important}
+.adv-item{border:0!important;border-right:1px solid var(--sb-line)!important;border-bottom:1px solid var(--sb-line)!important}
+.adv-item:nth-child(4n){border-right:0!important}
+
+/* Portfolio / photos */
+.ph{border-radius:4px!important;border-color:var(--sb-line)!important}
+.badge-hot{background:var(--sb-green)!important;border-radius:3px!important;box-shadow:none!important}
+.play-badge{background:rgba(34,164,71,.92)!important;box-shadow:none!important}
+.filter-pill.active{background:var(--sb-green)!important;border-color:var(--sb-green)!important;color:#fff!important}
+.filter-pill{border-color:#d5d9de!important;border-radius:3px!important}
+
+/* Reviews */
+.review-card{padding:24px!important}
+.review-head .stars{color:#f3a21a!important}
+
+/* CTA blocks */
+.final-cta{background:#f6f7f8!important;color:var(--sb-ink)!important}
+.final-box{background:#fff!important;border:1px solid var(--sb-line)!important;border-radius:4px!important;box-shadow:0 10px 32px rgba(32,33,36,.06)!important;padding:32px!important}
+.final-form-head{border-bottom:1px solid var(--sb-line)!important}
+.final-form-kicker{color:var(--sb-green)!important}
+.final-form-head h3{color:var(--sb-ink)!important}
+.final-form-head p,.final-form-note{color:#6d7279!important}
+.final-contact-form input,.final-contact-form textarea{background:#fff!important;color:var(--sb-ink)!important;border:1px solid #cfd3d8!important;border-radius:3px!important}
+.final-contact-form input:focus,.final-contact-form textarea:focus{border-color:var(--sb-green)!important;background:#fff!important}
+
+/* Footer */
+footer{background:#202124!important;color:#fff!important}
+footer a{color:#e3e5e8!important}
+footer a:hover{color:#fff!important}
+footer .muted{color:#a7abb0!important}
+
+/* Mobile */
+@media(max-width:980px){
+  .header-inner{min-height:64px!important}
+  nav.main-nav,.phone-block{display:none!important}
+  .menu-trigger{display:flex!important}
+  .hero{padding-top:92px!important}
+  .hero h1{font-size:clamp(38px,8vw,58px)!important}
+}
+@media(max-width:760px){
+  .header-cta .header-contact-buttons{display:none!important}
+  .hero{padding-top:82px!important;padding-bottom:30px!important}
+  .hero h1{font-size:40px!important}
+  h2.section-title{font-size:34px!important}
+  .btn{width:100%!important}
+  .hero-actions{flex-direction:column!important;align-items:stretch!important}
+  .adv-item{border-right:0!important}
+}
+@media(max-width:480px){
+  .header-inner{padding-left:16px!important;padding-right:16px!important}
+  .logo span:last-child{display:none!important}
+  .hero h1{font-size:35px!important}
+}
+
+</style>
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+<!-- ============================================================
+     1. ВЕРХНЯЯ НАВИГАЦИЯ
+     ============================================================ -->
+<header id="siteHeader">
+<div class="wrap header-inner">
+<a class="logo" href="#top"><span class="mark">SR</span>СТРОЙРЕМОНТ-МСК<span>Строительство · ремонт · кровля</span></a>
+<nav aria-label="Основная навигация" class="main-nav">
+<ul>
+<li class="has-dropdown">
+<a href="#categories">Направления <span class="caret">⌄</span></a>
+<div aria-label="Страницы направлений" class="dropdown">
+<a href="remont-krovlya.html">Ремонт и кровля крыш</a>
+<a href="fundament-opalubka.html">Фундамент и опалубка</a>
+<a href="doma.html">Дома</a>
+</div>
+</li>
+<li><a href="#portfolio">Фото работ</a></li>
+<li><a href="#proof">Видео</a></li>
+<li><a href="#reviews">Отзывы</a></li>
+<li><a href="#contacts">Контакты</a></li>
+</ul>
+</nav>
+<div class="header-cta">
+<div class="header-contact-buttons" aria-label="Связаться с нами">
+  <a class="btn header-max-btn" href="https://max.ru/u/f9LHodD0cOKMAV_CCj5Nnj_3gqnjIKA7j5QTeL0JzQPmm9q-cjE7iaw-UE" target="_blank" rel="noopener noreferrer">
+    Написать в MAX <span class="arrow">↗</span>
+  </a>
+</div>
+
+
+<button aria-label="Открыть меню" class="menu-trigger" id="menuTrigger"><span></span><span></span></button>
+</div>
+</div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-menu-top">
+<span class="logo"><span class="mark">SR</span>СТРОЙРЕМОНТ-МСК</span>
+<button aria-label="Закрыть меню" class="mobile-menu-close" id="menuClose">×</button>
+</div>
+<ul>
+<li><a href="#formats">Формат работы</a></li>
+<li><a href="#categories">Направления</a></li>
+<li><a href="remont-krovlya.html">Ремонт и кровля крыш</a></li>
+<li><a href="fundament-opalubka.html">Фундамент и опалубка</a></li>
+<li><a href="doma.html">Дома</a></li>
+<li><a href="#portfolio">Фото работ</a></li>
+<li><a href="#proof">Видео</a></li>
+<li><a href="#reviews">Отзывы</a></li>
+<li><a href="#faq">Вопросы</a></li>
+<li><a href="#contacts">Контакты</a></li>
+</ul>
+<div class="mobile-menu-foot">
+<a class="phone" href="tel:+79663892133" style="align-items:flex-start;">+7 966 389 21 33<small>с 7:00 до 23:00</small></a>
+
+</div>
+</div>
+<div id="top"></div>
+<!-- ============================================================
+     2. ПЕРВЫЙ ЭКРАН — ОФФЕР
+     ============================================================ -->
+<section class="hero">
+<div class="wrap">
+<div class="hero-grid">
+<div class="hero-copy reveal">
+<span class="eyebrow">Ремонт · Строительство · Отделка</span>
+<h1>Сделаем правильно — с первого раза</h1>
+<p class="lead">Приедем, разберёмся в причине проблемы и выполним нужные работы одной бригадой. Без лишних подрядчиков, без разросшейся сметы и без того, чтобы вы сами стояли над мастерами.</p>
+<ul class="hero-checks">
+<li>Точная смета до начала — никаких сюрпризов в процессе</li>
+<li>Одна бригада от осмотра до сдачи объекта</li>
+<li>Гарантия на работы зафиксирована в договоре</li>
+<li>Москва и МО — выезд в день обращения</li>
+</ul>
+<div class="hero-btns">
+<a class="btn btn-outline btn-lg" href="tel:+79663892133">Позвонить</a>
+<a class="btn btn-lg hero-max-btn" href="https://max.ru/u/f9LHodD0cOKMAV_CCj5Nnj_3gqnjIKA7j5QTeL0JzQPmm9q-cjE7iaw-UE8" target="_blank" rel="noopener noreferrer">МАКС <span class="arrow">↗</span></a>
+</div>
+</div>
+<div class="hero-visual reveal">
+<div class="ph ph-photo">
+<!-- images/1.webp — главное фото первого экрана: бригада на объекте / кровельные работы крупным планом -->
+<img alt="Бригада СТРОЙРЕМОНТ-МСК на объекте" class="zoomimg" src="1.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='1.png';">
+<span class="spec-tag" style="top:14px; left:14px;"><b>Объект</b><span>Москва и Московская область</span></span>
+</div>
+</div>
+</div>
+<div class="stat-band reveal">
+<div class="stat"><b class="counter" data-suffix="+" data-target="10">0</b><span>Лет опыта бригады</span></div>
+<div class="stat"><b>89</b><span>отзывов клиентов</span></div>
+<div class="stat"><b class="counter" data-decimal="true" data-target="4.8">0</b><span>оценка клиентов</span></div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+     3. БЛОК С БЫСТРЫМИ ПРЕИМУЩЕСТВАМИ (4 плашки)
+     ============================================================ -->
+<section class="pad-md divider">
+<div class="wrap">
+<div class="quick-grid reveal">
+<div class="quick-item"><span class="qi-ico">01</span><h4>Находим причину, а не маскируем симптом</h4><p>Осматриваем объект и объясняем, что реально происходит. Вы не платите за лишние работы — только за то, что действительно нужно.</p></div>
+<div class="quick-item"><span class="qi-ico">02</span><h4>Смета закрыта до старта</h4><p>Обсуждаем объём, материалы и сроки до начала. После старта цена не растёт — всё зафиксировано заранее.</p></div>
+<div class="quick-item"><span class="qi-ico">03</span><h4>Бригада, которая не пропадает</h4><p>Договорённости фиксируем в договоре. Доводим работу до результата — без «перезвоним завтра» и внезапных пауз.</p></div>
+<div class="quick-item"><span class="qi-ico">04</span><h4>Один подрядчик вместо пяти</h4><p>Кровля, фасад, фундамент, забор, плитка — всё в одних руках. Вам не нужно искать и согласовывать нескольких мастеров.</p></div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+     4. КАЛЬКУЛЯТОР / КВИЗ
+     ============================================================ -->
+<section class="pad-lg divider" id="quiz">
+<div class="wrap">
+<div class="quiz-wrap reveal">
+<div class="quiz-top">
+<div class="quiz-intro">
+<span class="eyebrow">Калькулятор стоимости</span>
+<h2>Узнайте стоимость за 2 минуты</h2>
+<p>Выберите тип работ и уточните детали. Оставьте контакт — перезвоним, разберём задачу и назовём ориентир по цене без визита.</p>
+</div>
+<div class="quiz-body">
+<div class="quiz-progress-label"><span id="quizStepLabel">Вопрос 1 из 4</span><span id="quizPercentLabel">25%</span></div>
+<div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quizProgressFill"></div></div>
+
+<!-- ШАГ 1 -->
+<div class="quiz-step active" data-step="1">
+<p class="quiz-question">Что нужно сделать?</p>
+<div class="quiz-options"><button class="quiz-opt" data-value="Заборы под ключ"><span class="qo-photo qo-placeholder"><img src="2.png" alt="" loading="lazy" onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='2.png';"></span>Заборы под ключ</button><button class="quiz-opt" data-value="Строительство фундаментов"><span class="qo-photo qo-placeholder"><img src="3.png" alt="" loading="lazy" onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='3.png';"></span>Фундамент</button><button class="quiz-opt" data-value="Автоматические ворота"><span class="qo-photo qo-placeholder"><img src="4.png" alt="" loading="lazy" onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='4.png';"></span>Ворота</button><button class="quiz-opt" data-value="Строительство веранд и террас"><span class="qo-photo qo-placeholder"><img src="5.png" alt="" loading="lazy" onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='5.png';"></span>Веранды и террасы</button><button class="quiz-opt" data-value="Навесы для автомобилей"><span class="qo-photo qo-placeholder"><img src="6.png" alt="" loading="lazy" onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='6.png';"></span>Навесы для автомобилей</button><button class="quiz-opt" data-value="Укладка тротуарной плитки"><span class="qo-photo qo-placeholder"><img src="7.png" alt="" loading="lazy" onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='7.png';"></span>Укладка тротуарной плитки</button><button class="quiz-opt" data-value="Обшивка и утепление фасадов"><span class="qo-photo qo-placeholder"><img src="8.png" alt="" loading="lazy" onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='8.png';"></span>Обшивка и утепление фасадов</button><button class="quiz-opt" data-value="Современные хозблоки"><span class="qo-photo qo-placeholder"><img src="9.png" alt="" loading="lazy" onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='9.png';"></span>Хозблоки</button><button class="quiz-opt" data-value="Дома"><span class="qo-photo qo-placeholder"><img src="10.png" alt="" loading="lazy" onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='10.png';"></span>Дома</button><button class="quiz-opt" data-value="Бани"><span class="qo-photo qo-placeholder"><img src="11.png" alt="" loading="lazy" onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='11.png';"></span>Бани</button><button class="quiz-opt" data-value="Кровельные работы и ремонт крыш"><span class="qo-photo qo-placeholder"><img src="12.png" alt="" loading="lazy" onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='12.png';"></span>Кровельные работы и ремонт крыш</button><button class="quiz-opt" data-value="Крыльца и входные группы"><span class="qo-photo qo-placeholder"><img src="13.png" alt="" loading="lazy" onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='13.png';"></span>Крыльца и входные группы</button></div>
+<textarea class="quiz-comment" data-comment-step="1" placeholder="Не нашли нужный вариант? Напишите, что именно нужно сделать или что вас беспокоит…"></textarea>
+<div class="quiz-nav"><span></span><button class="btn btn-accent" disabled id="quizNext1" type="button">Далее <span class="arrow">→</span></button></div>
+</div>
+
+<!-- ШАГ 2 -->
+<div class="quiz-step" data-step="2">
+<p class="quiz-question" id="quizDetailQuestion">Уточните детали</p>
+<div class="quiz-options cols-2" id="quizDetailOptions"></div>
+<textarea class="quiz-comment" data-comment-step="2" placeholder="Есть дополнительные детали? Напишите их здесь…"></textarea>
+<div class="quiz-nav"><button class="quiz-back" data-back="1" type="button">← Назад</button><button class="btn btn-accent" disabled id="quizNext2" type="button">Далее <span class="arrow">→</span></button></div>
+</div>
+
+<!-- ШАГ 3 -->
+<div class="quiz-step" data-step="3">
+<p class="quiz-question">Насколько срочно нужно решить вопрос?</p>
+<div class="quiz-options cols-2">
+<button class="quiz-opt" data-value="Проблема уже сейчас">Проблема уже сейчас</button>
+<button class="quiz-opt" data-value="В ближайший месяц">В ближайший месяц</button>
+<button class="quiz-opt" data-value="В течение года">В течение года</button>
+<button class="quiz-opt" data-value="Пока планирую">Пока планирую</button>
+</div>
+<textarea class="quiz-comment" data-comment-step="3" placeholder="Если есть важные сроки или обстоятельства, напишите их…"></textarea>
+<div class="quiz-nav"><button class="quiz-back" data-back="2" type="button">← Назад</button><button class="btn btn-accent" disabled id="quizNext3" type="button">Далее <span class="arrow">→</span></button></div>
+</div>
+
+<!-- ШАГ 4 — СВЯЗЬ -->
+<div class="quiz-step" data-step="4">
+<p class="quiz-question">Почти готово — разберём вашу ситуацию</p>
+<div class="quiz-summary" id="quizSummary" role="button" tabindex="0">
+<div class="quiz-summary-label"><span>Ваш выбор</span><span class="quiz-summary-copy-hint" id="quizSummaryCopyHint">Нажмите, чтобы скопировать</span></div>
+<div class="quiz-summary-text" id="quizSummaryText"></div>
+</div>
+<p class="lead" style="margin-bottom:26px;">Мы учли ваши ответы. Свяжитесь с нами — уточним детали, скажем, какие работы действительно нужны, и договоримся о следующем шаге.</p>
+<form class="quiz-contact-form" id="quizContactForm"><input autocomplete="name" name="name" placeholder="Ваше имя" required="required" type="text"/><input autocomplete="tel" name="phone" placeholder="Ваш телефон" required="required" type="tel"/><input autocomplete="address-level2" name="city" placeholder="Город / район" type="text"/><textarea name="contactComment" placeholder="Что важно учесть?" rows="3"></textarea><button class="btn btn-lg btn-accent" type="submit">Получить расчёт</button><p class="form-note">Форма пока никуда не отправляет — данные останутся на странице.</p></form>
+<div class="quiz-nav" style="justify-content:flex-start;"><button class="quiz-back" data-back="3" type="button">← Назад</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+     5. КАТЕГОРИИ УСЛУГ
+     ============================================================ -->
+<section class="pad-lg divider" id="categories">
+<div class="wrap">
+<span class="eyebrow reveal">Направления работ</span>
+<h2 class="section-title reveal" style="margin-bottom:36px;">Работы для дома и участка</h2>
+<div class="cat-grid reveal"><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Заборы под ключ" class="zoomimg" src="2.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='14.png';"></div><div class="cat-label"><div class="cat-label-top"><h4>Заборы под ключ</h4><span class="cat-arrow">→</span></div><p>Монтаж основания, опор, полотна, калитки и ворот — без необходимости искать несколько подрядчиков.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Строительство фундаментов" class="zoomimg" src="15.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='15.png';"></div><div class="cat-label"><div class="cat-label-top"><h4>Строительство фундаментов</h4><span class="cat-arrow">→</span></div><p>Основание под дом, пристройку, баню или другое строение с учётом особенностей участка.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Автоматические ворота" class="zoomimg" src="4.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='16.png';"></div><div class="cat-label"><div class="cat-label-top"><h4>Автоматические ворота</h4><span class="cat-arrow">→</span></div><p>Распашные и откатные ворота с автоматикой — удобно открывать и закрывать без выхода из машины.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Строительство веранд и террас" class="zoomimg" src="5.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='17.png';"></div><div class="cat-label"><div class="cat-label-top"><h4>Строительство веранд и террас</h4><span class="cat-arrow">→</span></div><p>Тёплые и открытые веранды, террасы и пристройки под задачи вашего дома и участка.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Навесы для автомобилей" class="zoomimg" src="6.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='18.png';"></div><div class="cat-label"><div class="cat-label-top"><h4>Навесы для автомобилей</h4><span class="cat-arrow">→</span></div><p>Навесы для автомобиля от подготовки основания до монтажа конструкции и покрытия.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Укладка тротуарной плитки" class="zoomimg" src="7.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='19.png';"></div><div class="cat-label"><div class="cat-label-top"><h4>Укладка тротуарной плитки</h4><span class="cat-arrow">→</span></div><p>Подготовка основания и укладка плитки для дорожек, площадок, двора и парковки.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Обшивка и утепление фасадов" class="zoomimg" src="8.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='20.png';"></div><div class="cat-label"><div class="cat-label-top"><h4>Обшивка и утепление фасадов</h4><span class="cat-arrow">→</span></div><p>Утепление, обшивка и обновление фасада, чтобы дом был теплее и выглядел аккуратно.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Современные хозблоки" class="zoomimg" src="9.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='21.png';"></div><div class="cat-label"><div class="cat-label-top"><h4>Современные хозблоки</h4><span class="cat-arrow">→</span></div><p>Хозблоки для хранения, мастерской, инвентаря и других задач — с продуманной планировкой.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Строительство каркасных домов и бань" class="zoomimg" src="22.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='22.png';"></div><div class="cat-label"><div class="cat-label-top"><h4>Строительство каркасных домов и бань</h4><span class="cat-arrow">→</span></div><p>Каркасные дома и бани с возведением конструкции, утеплением и подготовкой под дальнейшую отделку.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Кровельные работы и ремонт крыш" class="zoomimg" src="23.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='23.png';"></div><div class="cat-label"><div class="cat-label-top"><h4>Кровельные работы и ремонт крыш</h4><span class="cat-arrow">→</span></div><p>Монтаж, ремонт и восстановление кровли — от локальных проблем до комплексных работ.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Крыльца и входные группы" class="zoomimg" src="13.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='24.png';"></div><div class="cat-label"><div class="cat-label-top"><h4>Крыльца и входные группы</h4><span class="cat-arrow">→</span></div><p>Устройство крылец, ступеней и входных площадок с учётом конструкции дома и условий участка.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Строительство домов" class="zoomimg" src="10.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='10.png';"></div><div class="cat-label"><div class="cat-label-top"><h4>Строительство домов</h4><span class="cat-arrow">→</span></div><p>Каркасные дома и дома из бруса под ключ — от фундамента до финишной отделки.</p></div></a></div>
+</div>
+</section>
+<!-- ============================================================
+     6. БЛОК ОСНОВНЫХ УСЛУГ
+     ============================================================ -->
+<section class="pad-lg divider" id="formats">
+<div class="wrap">
+<span class="eyebrow reveal">Форматы работы</span>
+<h2 class="section-title reveal" style="margin-bottom:36px;">Понятные варианты сотрудничества</h2>
+<div class="svc-grid reveal"><div class="svc-card"><span class="svc-num">01</span><h4>Один этап</h4><p>Нужен только фундамент, фасад, забор, плитка или другой конкретный этап — берём отдельную работу без лишних услуг.</p></div><div class="svc-card"><span class="svc-num">02</span><h4>Ремонт объекта</h4><p>Есть несколько проблем сразу? Составляем единый план и последовательно приводим объект в порядок.</p></div><div class="svc-card"><span class="svc-num">03</span><h4>Строительство с нуля</h4><p>Берём объект от основания до готового результата: дома, бани, веранды, хозблоки и другие конструкции.</p></div><div class="svc-card"><span class="svc-num">04</span><h4>Переделка ремонта</h4><p>Если предыдущая бригада оставила недоделки или ошибки, оцениваем состояние и предлагаем понятный план исправления.</p></div></div>
+</div>
+</section>
+<!-- ============================================================
+     7. БОЛЬШОЙ БЛОК ПРЕИМУЩЕСТВ
+     ============================================================ -->
+<section class="pad-lg divider" id="advantages">
+<div class="wrap">
+<span class="eyebrow reveal">Почему выбирают нас</span>
+<h2 class="section-title reveal" style="margin-bottom:36px;">Почему клиенты возвращаются и рекомендуют нас</h2>
+<div class="adv-grid reveal">
+<div class="adv-item"><span class="adv-num">01</span><h3>Понятные условия вместо обещаний «всё будет хорошо»</h3><p>Условия гарантии и ответственности фиксируем в договоре. Вы заранее понимаете, за какой результат отвечает подрядчик.</p></div>
+<div class="adv-item"><span class="adv-num">02</span><h3>Не хочется потом исправлять работу за дешёвой бригадой</h3><p>Стараемся не допускать типичной ситуации, когда после одной бригады приходится вызывать другую для переделки.</p></div>
+<div class="adv-item"><span class="adv-num">03</span><h3>Не хотите быть прорабом на собственном объекте</h3><p>Берём на себя согласование этапов, закупку или работу с вашими материалами и организацию работ, чтобы вам не приходилось ежедневно решать вопросы на объекте.</p></div>
+<div class="adv-item"><span class="adv-num">04</span><h3>Меньше простоев из-за «инструмент завтра привезут»</h3><p>Используем необходимый инструмент и оборудование для выполнения согласованных работ без постоянных переносов из-за нехватки оснащения.</p></div>
+<div class="adv-item"><span class="adv-num">05</span><h3>Чтобы ремонт не превращался в бесконечный бардак</h3><p>Сначала определяем последовательность, затем выполняем этапы. Так меньше риска, что один мастер испортит результат работы другого.</p></div>
+<div class="adv-item"><span class="adv-num">06</span><h3>Не экономим там, где ошибка потом стоит дорого</h3><p>Обсуждаем материалы и технологию до начала работ, особенно там, где ошибка может привести к протечке, сырости или повторному ремонту.</p></div>
+<div class="adv-item"><span class="adv-num">07</span><h3>Большие проблемы часто начинаются с маленьких ошибок</h3><p>Учитываем узлы примыкания, утепление, гидроизоляцию, уклоны, водоотвод и другие детали, которые не видны после окончания ремонта, но влияют на срок службы.</p></div>
+<div class="adv-item"><span class="adv-num">08</span><h3>Не хотите каждый день контролировать бригаду?</h3><p>Контролируем ключевые этапы и согласованный объём, чтобы заказчику не приходилось постоянно стоять над рабочими.</p></div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+     8. БЛОК С ВИЗУАЛЬНЫМИ ДОКАЗАТЕЛЬСТВАМИ (видео + отзывы)
+     ============================================================ -->
+<section class="pad-lg divider" id="proof">
+  <div class="wrap">
+
+    <span class="eyebrow reveal">Отзывы и видео работ</span>
+
+    <h2 class="section-title reveal" style="margin-bottom:16px;">
+      Посмотрите, как проходит работа на объекте
+    </h2>
+
+    <p class="lead reveal" style="margin-bottom:36px;">
+      Красивый финал — это итог правильного процесса. Смотрите, как мы работаем на объектах: демонтаж, подготовка основания, скрытые этапы — то, что определяет качество и срок службы.
+    </p>
+
+        <div class="video-grid reveal">
+
+      <!-- Видео 1 -->
+      <div class="stock-video-card">
+        <video class="stock-video" src="https://www.image2url.com/r2/default/videos/1790149768517-f1b985b0-12a2-4ccb-9067-0e756a5391e4.mp4" autoplay muted loop playsinline controls></video>
+      </div>
+
+      <!-- Видео 2 -->
+      <div class="stock-video-card">
+        <video class="stock-video" src="https://www.image2url.com/r2/default/videos/1790149902362-5b1f6246-641d-4bca-8751-ec9a89e0cbea.mp4" autoplay muted loop playsinline controls></video>
+      </div>
+
+      <!-- Видео 3 -->
+      <div class="stock-video-card">
+        <iframe class="stock-video" src="https://frontend.vh.yandex.ru/player/vWBusc68O3CQ?from=ydo" allow="fullscreen" allowfullscreen frameborder="0"></iframe>
+      </div>
+
+      <!-- Видео 4 -->
+      <div class="stock-video-card">
+        <iframe class="stock-video" src="https://frontend.vh.yandex.ru/player/vtVNpywqV8kc?from=ydo" allow="fullscreen" allowfullscreen frameborder="0"></iframe>
+      </div>
+
+      <!-- Видео 5 -->
+      <div class="stock-video-card">
+        <video class="stock-video" src="https://www.image2url.com/r2/default/videos/1790149937072-3a40d980-d781-4a50-9115-1a7f2977f7d8.mp4" autoplay muted loop playsinline controls></video>
+      </div>
+
+        <!-- Видео 5 -->
+      <div class="stock-video-card">
+        <iframe class="stock-video" src="https://frontend.vh.yandex.ru/player/vpmj867JP9Qw?from=ydo" allow="fullscreen" allowfullscreen frameborder="0"></iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .stock-video-card {
+    overflow: hidden;
+    border-radius: 16px;
+  }
+
+  .stock-video {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 16px;
+    background: #111;
+  }
+
+  .stock-video-card p {
+    margin: 12px 0 0;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  /* Планшет */
+  @media (max-width: 900px) {
+    .video-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stock-video {
+      height: 240px;
+    }
+  }
+
+  /* Телефон */
+  @media (max-width: 600px) {
+    .video-grid {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .stock-video {
+      height: auto;
+      aspect-ratio: 16 / 9;
+    }
+  }
+</style>
+<!-- ============================================================
+     9. ФОТО РАБОТ И ПРОЦЕССА (портфолио)
+     ============================================================ -->
+<section class="pad-lg divider" id="portfolio">
+<div class="wrap">
+<span class="eyebrow reveal">Реальные объекты</span>
+<h2 class="section-title reveal" style="margin-bottom:16px;">Показываем процесс, а не только результат</h2>
+<p class="lead reveal" style="margin-bottom:36px;">Смотрите этапы работ и результат. Для нового проекта сюда лучше добавить реальные фотографии объектов: особенно полезны кадры «до → процесс → после».</p>
+<div class="portfolio-grid reveal" id="portfolioGrid">
+<div class="portfolio-item tilt" data-cat="floor"><div class="ph ph-square"><!-- images/31.jpg --><img alt="Ремонт деревянного пола" class="zoomimg" src="25.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='25.png';"></div><div class="portfolio-info"><div><h4>Утепление крыши</h4><span class="cat">Полы</span></div></div></div>
+<div class="portfolio-item tilt" data-cat="roof"><div class="ph ph-square"><!-- images/32.jpg --><img alt="Перекрытие крыши" class="zoomimg" src="26.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='26.png';"></div><div class="portfolio-info"><div><h4>Перекрытие крыши</h4><span class="cat">Кровля</span></div></div></div>
+<div class="portfolio-item tilt" data-cat="foundation"><div class="ph ph-square"><!-- images/33.jpg --><img alt="Фундамент и бетонные работы" class="zoomimg" src="27.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='27.png';"></div><div class="portfolio-info"><div><h4>Фундамент и бетонные работы</h4><span class="cat">Фундамент</span></div></div></div>
+<div class="portfolio-item tilt" data-cat="house"><div class="ph ph-square"><!-- images/34.jpg --><img alt="Строительство дома" class="zoomimg" src="28.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='28.png';"></div><div class="portfolio-info"><div><h4>Строительство дома</h4><span class="cat">Дом под ключ</span></div></div></div>
+<div class="portfolio-item tilt" data-cat="facade"><div class="ph ph-square"><!-- images/35.jpg --><img alt="Ремонт и обшивка фасада" class="zoomimg" src="29.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='29.png';"></div><div class="portfolio-info"><div><h4>Ремонт и обшивка фасада</h4><span class="cat">Фасад</span></div></div></div>
+<div class="portfolio-item tilt" data-cat="bath"><div class="ph ph-square"><!-- images/36.jpg --><img alt="Строительство бани" class="zoomimg" src="30.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='30.png';"></div><div class="portfolio-info"><div><h4>Баня под ключ</h4><span class="cat">Баня</span></div></div></div>
+<div class="portfolio-item tilt" data-cat="roof"><div class="ph ph-square"><!-- images/37.jpg --><img alt="Работы СТРОЙРЕМОНТ-МСК на объекте" class="zoomimg" src="31.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='31.png';"></div><div class="portfolio-info"><div><h4>Кровельные работы</h4><span class="cat">Кровля</span></div></div></div>
+<div class="portfolio-item tilt" data-cat="roof"><div class="ph ph-square"><!-- images/38.jpg --><img alt="Работы СТРОЙРЕМОНТ-МСК на объекте" class="zoomimg" src="32.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='32.png';"></div><div class="portfolio-info"><div><h4>Ремонт протечек и кровли</h4><span class="cat">Кровля</span></div></div></div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+     ГЕОГРАФИЯ ВЫЕЗДА
+     ============================================================ -->
+<section class="pad-lg divider" id="area">
+<div class="wrap area-grid">
+<div class="reveal">
+<span class="eyebrow">Москва и МО</span>
+<h2 class="section-title" style="margin-bottom:18px;">Москва и МО</h2>
+<p class="lead">Выезжаем по Москве и Московской области. Осматриваем объект лично — не ставим диагнозов по фото и не называем цену «на глаз».</p>
+<ul class="area-list">
+<li><strong>Москва</strong> — ремонт, отделка и строительные работы</li>
+<li><strong>Московская область</strong> — частные дома и участки</li>
+</ul>
+<div class="hero-btns">
+<a class="btn btn-outline" href="tel:+7 966 389 21 33">Уточнить по телефону</a>
+<a class="btn" href="https://max.ru/u/f9LHodD0cOKMAV_CCj5Nnj_3gqnjIKA7j5QTeL0JzQPmm9q-cjE7iaw-UE8" target="_blank" rel="noopener noreferrer">МАКС <span class="arrow">↗</span></a>
+</div>
+</div>
+<div class="map-ph reveal">
+<iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=35.1421%2C54.9418%2C40.2056%2C56.4813&amp;layer=mapnik&amp;marker=55.7558%2C37.6173" title="Москва и Московская область"></iframe>
+<a class="map-full-link" href="https://www.openstreetmap.org/?mlat=55.7558&amp;mlon=37.6173#map=8/55.7558/37.6173" rel="noopener" target="_blank">Открыть карту крупнее →</a>
+</div>
+</div>
+</section>
+<!-- ============================================================
+     10. ПРОЦЕСС РАБОТЫ (6 шагов)
+     ============================================================ -->
+<section class="pad-lg divider" id="steps">
+<div class="wrap">
+<span class="eyebrow reveal">Процесс</span>
+<h2 class="section-title reveal" style="margin-bottom:12px;">Без хаоса: от первой заявки до понятного результата</h2>
+<p class="lead reveal" style="margin-bottom:36px;">Не нужно разбираться в строительстве или готовить техзадание. Просто скажите, что не так — мы разберёмся, что нужно сделать и сколько это стоит.</p>
+<div class="steps-row reveal">
+<div class="step"><span class="num">01</span><h3>Рассказываете задачу</h3><p>Звоните или пишите — описываете ситуацию своими словами, без технических терминов.</p></div>
+<div class="step"><span class="num">02</span><h3>Осматриваем объект</h3><p>Приезжаем и смотрим лично. Не ставим диагноз по фото — нужно видеть своими глазами.</p></div>
+<div class="step"><span class="num">03</span><h3>Согласовываем смету</h3><p>Фиксируем объём работ и цену до старта. Никаких сюрпризов по ходу выполнения.</p></div>
+<div class="step"><span class="num">04</span><h3>Подбираем материалы</h3><p>Помогаем выбрать и закупить нужное. Не навязываем лишнего — только то, что требуется.</p></div>
+<div class="step"><span class="num">05</span><h3>Выполняем работы</h3><p>Работаем строго по плану. Контролируем скрытые этапы — то, что потом не переделаешь.</p></div>
+<div class="step"><span class="num">06</span><h3>Сдаём результат</h3><p>Проверяем итог вместе с вами, устраняем замечания и закрываем объект по договору.</p></div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+     11. ОТЗЫВЫ КЛИЕНТОВ
+     ============================================================ -->
+<section class="pad-lg divider" id="reviews">
+<div class="wrap">
+<span class="eyebrow reveal">Отзывы клиентов<a href="#" rel="noopener" target="_blank">отзывы клиентов</a></span>
+<h2 class="section-title reveal">Что проверить перед началом ремонта</h2>
+<div class="rating-band reveal"><div class="stat"><b>50</b><span>отзывов клиентов</span></div><div class="stat"><b>4.8</b><span>оценка клиентов</span></div></div>
+<style id="reviews-responsive-pages">
+/* Desktop: 8 reviews per page; Mobile: 6 per page */
+.review-page { display: none; }
+.review-page.is-active { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
+@media (max-width: 900px) {
+  .review-page.is-active { grid-template-columns: repeat(3,1fr); }
+}
+@media (max-width: 600px) {
+  .review-page.is-active { grid-template-columns: repeat(2,1fr); }
+  /* On mobile, only show first 6 cards (hide 7th and 8th if present) */
+  .review-page .review-card:nth-child(n+7) { display: none; }
+}
+</style>
+
+<div class="reviews-carousel reveal" id="reviewsCarousel">
+<div class="review-pages">
+
+<!-- Page 1: reviews 1–8 -->
+<div class="review-page is-active" data-review-page="0">
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Александр К.</div><div class="stars">★★★★★</div></div></div><p class="review-text">Заказывали у Романа ремонт кровли. Приехали вовремя, быстро оценили состояние крыши и сразу предложили несколько вариантов решения. Работу сделали аккуратно, после себя всё убрали. Результатом доволен.</p><div class="review-meta">23.09.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Виктор</div><div class="stars">★★★★★</div></div></div><p class="review-text">Роман и команда строили нам террасу. Всё получилось именно так, как договаривались. Особенно понравилось, что ребята внимательно отнеслись к деталям и несколько раз уточняли наши пожелания.</p><div class="review-meta">21.09.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Марина С.</div><div class="stars">★★★★★</div></div></div><p class="review-text">Обратились по поводу ремонта старого дома. Работа была непростая, но команда справилась. Всё объясняли по ходу работ, лишнего не навязывали. Спасибо Роману за ответственное отношение.</p><div class="review-meta">19.09.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Николай</div><div class="stars">★★★★★</div></div></div><p class="review-text">Делали кровлю на даче. Бригада работала слаженно, материалы завезли вовремя, сроки не затягивали. Крыша получилась аккуратная и крепкая.</p><div class="review-meta">17.09.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Ирина</div><div class="stars">★★★★★</div></div></div><p class="review-text">Роман помог разобраться с проблемой после предыдущих строителей. Нашли причину, исправили ошибки и довели работу до конца. Очень понравился подход без лишних разговоров.</p><div class="review-meta">15.09.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Сергей П.</div><div class="stars">★★★★★</div></div></div><p class="review-text">Заказывали строительство беседки. Ребята сделали всё достаточно быстро, конструкция получилась ровной и добротной. Отдельное спасибо за то, что учли все наши пожелания.</p><div class="review-meta">13.09.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Дмитрий</div><div class="stars">★★★★★</div></div></div><p class="review-text">Хорошая команда. Заказывал ремонт крыши и замену нескольких элементов. Приехали, посмотрели, посчитали и приступили к работе. Всё сделали аккуратно.</p><div class="review-meta">11.09.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Ольга В.</div><div class="stars">★★★★★</div></div></div><p class="review-text">Нужно было восстановить старую веранду. Роман предложил несколько решений и объяснил, какой вариант будет практичнее. В итоге получилось даже лучше, чем представляли.</p><div class="review-meta">09.09.2026</div></article>
+</div>
+
+<!-- Page 2: reviews 9–16 -->
+<div class="review-page" data-review-page="1">
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Андрей</div><div class="stars">★★★★★</div></div></div><p class="review-text">Работали у нас несколько дней. Очень понравилось, что ребята не сидят без дела, всё организовано. После окончания работ участок оставили чистым.</p><div class="review-meta">07.09.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Павел М.</div><div class="stars">★★★★★</div></div></div><p class="review-text">Делали ремонт кровли после протечки. Проблему нашли быстро, заменили повреждённые участки. После первого дождя всё сухо, так что результатом полностью доволен.</p><div class="review-meta">05.09.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Татьяна</div><div class="stars">★★★★★</div></div></div><p class="review-text">Заказывали ремонт деревянного дома. Работа большая, поэтому переживали за сроки. Команда Романа уложилась практически день в день. Спасибо за хорошую организацию.</p><div class="review-meta">03.09.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Алексей</div><div class="stars">★★★★★</div></div></div><p class="review-text">Понравилось отношение к работе. Роман сам контролировал процесс, поэтому не приходилось постоянно объяснять одно и то же разным мастерам. Сделали качественно.</p><div class="review-meta">01.09.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Евгений</div><div class="stars">★★★★★</div></div></div><p class="review-text">Строили крыльцо и навес. Всё получилось аккуратно, крепко и без лишних расходов. Хорошая работа, рекомендую.</p><div class="review-meta">30.08.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Наталья</div><div class="stars">★★★★★</div></div></div><p class="review-text">Обратились по рекомендации знакомых. Нужно было привести в порядок крышу старого дома. Ребята полностью разобрались с проблемными местами и всё исправили.</p><div class="review-meta">28.08.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Михаил</div><div class="stars">★★★★★</div></div></div><p class="review-text">Роман оказался очень внимательным специалистом. Перед началом подробно обсудили работу, материалы и сроки. В процессе никаких неожиданных доплат не появилось.</p><div class="review-meta">26.08.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Елена</div><div class="stars">★★★★★</div></div></div><p class="review-text">Заказывали отделку фасада. Бригада работала аккуратно, углы и стыки сделали хорошо. Дом теперь выглядит совсем по-другому.</p><div class="review-meta">24.08.2026</div></article>
+</div>
+
+<!-- Page 3: reviews 17–24 -->
+<div class="review-page" data-review-page="2">
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Игорь</div><div class="stars">★★★★★</div></div></div><p class="review-text">Нужно было заменить старую кровлю на даче. Справились за несколько дней. Всё выглядит аккуратно, мусор после работы убрали.</p><div class="review-meta">22.08.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Светлана</div><div class="stars">★★★★★</div></div></div><p class="review-text">Спасибо Роману и его команде за работу. Отдельно хочу отметить пунктуальность. Договорились на одно время, приехали именно тогда.</p><div class="review-meta">20.08.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Артём</div><div class="stars">★★★★★</div></div></div><p class="review-text">Делали ремонт пола в загородном доме. Старый пол был в плохом состоянии, пришлось практически всё переделывать. Получилось ровно и аккуратно.</p><div class="review-meta">18.08.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Владимир</div><div class="stars">★★★★★</div></div></div><p class="review-text">Хорошие мастера, видно, что опыт есть. Не стали просто закрывать проблему, а нашли причину и предложили нормальное решение.</p><div class="review-meta">16.08.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Юлия</div><div class="stars">★★★★★</div></div></div><p class="review-text">Заказывали строительство небольшой террасы. Очень понравилось, что Роман спокойно выслушал все пожелания и подсказал, где можно сделать удобнее. Результат отличный.</p><div class="review-meta">14.08.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Денис</div><div class="stars">★★★★★</div></div></div><p class="review-text">Работой команды доволен. Всё организовано, материалы не пропадали, рабочее место поддерживали в порядке. По качеству вопросов нет.</p><div class="review-meta">12.08.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Роман С.</div><div class="stars">★★★★★</div></div></div><p class="review-text">Обращался по поводу протечки крыши. Приехали на осмотр, быстро нашли проблемное место. Ремонт сделали в тот же день.</p><div class="review-meta">10.08.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Валерия</div><div class="stars">★★★★★</div></div></div><p class="review-text">Делали ремонт дачного дома. Работы было много, но команда всё выполняла последовательно. Роман всегда был на связи и отвечал на вопросы.</p><div class="review-meta">08.08.2026</div></article>
+</div>
+
+<!-- Page 4: reviews 25–32 -->
+<div class="review-page" data-review-page="3">
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Константин</div><div class="stars">★★★★★</div></div></div><p class="review-text">Заказывал навес для машины. Конструкция получилась крепкая, выглядит хорошо. Сварные соединения и покраска сделаны аккуратно.</p><div class="review-meta">06.08.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Мария</div><div class="stars">★★★★★</div></div></div><p class="review-text">Спасибо за ремонт веранды. Особенно понравилось, что мастера бережно относились к дому и не оставляли после себя строительный хаос.</p><div class="review-meta">04.08.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Александр</div><div class="stars">★★★★★</div></div></div><p class="review-text">Нужно было срочно подготовить дом к осени. Роман смог организовать работу в короткие сроки. Всё необходимое сделали, большое спасибо.</p><div class="review-meta">02.08.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Олег</div><div class="stars">★★★★★</div></div></div><p class="review-text">Заказывали замену кровельного покрытия. Бригада приехала со всем необходимым инструментом, работали быстро. Результатом доволен.</p><div class="review-meta">31.07.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Ксения</div><div class="stars">★★★★★</div></div></div><p class="review-text">Очень приятное впечатление от работы. Роман всё подробно объяснил ещё на этапе оценки, поэтому было понятно, за что платим. Сделали хорошо.</p><div class="review-meta">29.07.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Максим</div><div class="stars">★★★★★</div></div></div><p class="review-text">Делали реконструкцию части дома. Были сложные моменты, но команда смогла найти решение без полной переделки конструкции. Получилось качественно.</p><div class="review-meta">27.07.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Сергей</div><div class="stars">★★★★★</div></div></div><p class="review-text">Ребята ремонтировали крышу после нескольких лет эксплуатации. Заменили повреждённые элементы, усилили конструкцию. Работой доволен.</p><div class="review-meta">25.07.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Анна</div><div class="stars">★★★★★</div></div></div><p class="review-text">Заказывали беседку на участке. Роман помог определиться с конструкцией и материалами. В итоге получили именно то, что хотели.</p><div class="review-meta">23.07.2026</div></article>
+</div>
+
+<!-- Page 5: reviews 33–40 -->
+<div class="review-page" data-review-page="4">
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Павел</div><div class="stars">★★★★★</div></div></div><p class="review-text">Работали по ремонту фасада. Всё сделали ровно, аккуратно, без спешки. Видно, что мастера заинтересованы в нормальном результате.</p><div class="review-meta">21.07.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Дмитрий Л.</div><div class="stars">★★★★★</div></div></div><p class="review-text">Обращался по рекомендации. Нужно было восстановить часть кровли и заменить водосток. Всё сделали за оговоренный срок.</p><div class="review-meta">19.07.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Наталья П.</div><div class="stars">★★★★★</div></div></div><p class="review-text">Хорошая бригада, работают спокойно и без суеты. Роман постоянно контролировал процесс. После завершения всё проверили вместе.</p><div class="review-meta">17.07.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Владислав</div><div class="stars">★★★★★</div></div></div><p class="review-text">Заказывал строительство небольшого хозяйственного помещения. Смету обсудили заранее, по ходу работы всё было понятно. Результатом доволен.</p><div class="review-meta">15.07.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Екатерина</div><div class="stars">★★★★★</div></div></div><p class="review-text">Ремонтировали старую террасу. Часть досок пришлось полностью менять, некоторые элементы укреплять. Получилось красиво и гораздо надёжнее, чем было.</p><div class="review-meta">13.07.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Артур</div><div class="stars">★★★★★</div></div></div><p class="review-text">Спасибо Роману за нормальную организацию работы. Не пришлось искать отдельно несколько разных специалистов, команда закрыла задачу целиком.</p><div class="review-meta">11.07.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Людмила</div><div class="stars">★★★★★</div></div></div><p class="review-text">Делали ремонт крыши на даче. Всё прошло спокойно, без неприятных сюрпризов. Ребята вежливые, работают аккуратно.</p><div class="review-meta">09.07.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Иван</div><div class="stars">★★★★★</div></div></div><p class="review-text">Заказывали ремонт фасада и небольшие работы по дому. Все задачи выполнили в рамках договорённостей. Отдельно спасибо за аккуратность.</p><div class="review-meta">07.07.2026</div></article>
+</div>
+
+<!-- Page 6: reviews 41–48 -->
+<div class="review-page" data-review-page="5">
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Михаил К.</div><div class="stars">★★★★★</div></div></div><p class="review-text">Роман лично приехал на осмотр, всё посмотрел и объяснил. После согласования приступили к работе. Понравилось, что не пытались навязать ненужные услуги.</p><div class="review-meta">05.07.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Оксана</div><div class="stars">★★★★★</div></div></div><p class="review-text">Бригада ремонтировала нашу дачу. Работа большая, но ребята справились организованно. Особенно понравилось качество отделки.</p><div class="review-meta">03.07.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Георгий</div><div class="stars">★★★★★</div></div></div><p class="review-text">Заказывал замену нескольких участков кровли. Работа небольшая, но отнеслись к ней так же внимательно, как к большому объекту. Спасибо.</p><div class="review-meta">01.07.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Егор</div><div class="stars">★★★★★</div></div></div><p class="review-text">Делали навес и небольшую площадку возле дома. Всё рассчитали, установили и проверили. Конструкция получилась аккуратной и устойчивой.</p><div class="review-meta">29.06.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Софья</div><div class="stars">★★★★★</div></div></div><p class="review-text">Обращались к Роману для ремонта старого дома родителей. Для нас было важно сохранить внешний вид дома. Команда это учла и при этом нормально укрепила проблемные места.</p><div class="review-meta">27.06.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Кирилл</div><div class="stars">★★★★★</div></div></div><p class="review-text">Работой доволен. Мастера приехали подготовленными, всё необходимое было с собой. Закончили раньше, чем ожидали.</p><div class="review-meta">25.06.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Марина</div><div class="stars">★★★★★</div></div></div><p class="review-text">Ремонтировали крышу и водосточную систему. После завершения Роман всё показал и объяснил, что именно было сделано. Хороший сервис и нормальное отношение.</p><div class="review-meta">23.06.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Николай П.</div><div class="stars">★★★★★</div></div></div><p class="review-text">Заказывал ремонт крыльца. Старую конструкцию разобрали, основание подготовили и сделали новое. Всё выглядит надёжно, пользоваться стало намного удобнее.</p><div class="review-meta">21.06.2026</div></article>
+</div>
+
+<!-- Page 7: reviews 49–50 -->
+<div class="review-page" data-review-page="6">
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Вадим</div><div class="stars">★★★★★</div></div></div><p class="review-text">Спасибо Роману и ребятам за работу. Сроки соблюдены, качество хорошее, на вопросы отвечали без проблем. Буду обращаться ещё.</p><div class="review-meta">19.06.2026</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Елена М.</div><div class="stars">★★★★★</div></div></div><p class="review-text">Остались довольны результатом. Команда работала аккуратно, Роман контролировал все основные этапы. В итоге получили качественно сделанную работу без лишних нервов.</p><div class="review-meta">17.06.2026</div></article>
+</div>
+<div aria-label="Навигация по отзывам" class="reviews-controls">
+<button aria-label="Предыдущие отзывы" class="review-nav" id="reviewsPrev" type="button">←</button>
+<div class="review-dots" id="reviewDots">
+<button class="review-dot is-active" data-review-page="0" aria-label="Страница отзывов 1" aria-current="true" type="button"></button>
+<button class="review-dot" data-review-page="1" aria-label="Страница отзывов 2" aria-current="false" type="button"></button>
+<button class="review-dot" data-review-page="2" aria-label="Страница отзывов 3" aria-current="false" type="button"></button>
+<button class="review-dot" data-review-page="3" aria-label="Страница отзывов 4" aria-current="false" type="button"></button>
+<button class="review-dot" data-review-page="4" aria-label="Страница отзывов 5" aria-current="false" type="button"></button>
+<button class="review-dot" data-review-page="5" aria-label="Страница отзывов 6" aria-current="false" type="button"></button>
+<button class="review-dot" data-review-page="6" aria-label="Страница отзывов 7" aria-current="false" type="button"></button>
+</div>
+<button aria-label="Следующие отзывы" class="review-nav" id="reviewsNext" type="button">→</button>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+     12.5 ГАЛЕРЕЯ РАБОТ (без подписей)
+     ============================================================ -->
+<section class="pad-lg divider" id="gallery">
+<div class="wrap">
+<span class="eyebrow reveal">Галерея</span>
+<h2 class="section-title reveal" style="margin-bottom:36px;">Ещё примеры работ</h2>
+<div class="gallery-grid reveal">
+<div class="gallery-item"><div class="ph"><img alt="Фото работы 11" class="zoomimg" src="33.png" loading="lazy"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='33.png';"></div></div>
+<div class="gallery-item"><div class="ph"><img alt="Фото работы 12" class="zoomimg" src="34.png" loading="lazy"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='34.png';"></div></div>
+<div class="gallery-item"><div class="ph"><img alt="Фото работы 13" class="zoomimg" src="35.png" loading="lazy"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='35.png';"></div></div>
+<div class="gallery-item"><div class="ph"><img alt="Фото работы 14" class="zoomimg" src="36.png" loading="lazy"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='36.png';"></div></div>
+<div class="gallery-item"><div class="ph"><img alt="Фото работы 15" class="zoomimg" src="37.png" loading="lazy"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='37.png';"></div></div>
+<div class="gallery-item"><div class="ph"><img alt="Фото работы 16" class="zoomimg" src="38.png" loading="lazy"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='38.png';"></div></div>
+<div class="gallery-item"><div class="ph"><img alt="Фото работы 17" class="zoomimg" src="39.png" loading="lazy"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='39.png';"></div></div>
+<div class="gallery-item"><div class="ph"><img alt="Фото работы 18" class="zoomimg" src="40.png" loading="lazy"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='40.png';"></div></div>
+</div>
+</section>
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="pad-lg divider" id="faq">
+<div class="wrap">
+<span class="eyebrow reveal">Вопросы и ответы</span>
+<h2 class="section-title reveal" style="margin-bottom:28px;">Вопросы, которые обычно возникают перед ремонтом</h2>
+<div class="faq-list reveal" id="faqList">
+<div class="faq-item open"><button class="faq-q" type="button"><h3>Боитесь, что на месте цена вырастет?</h3><span class="plus">+</span></button><div class="faq-a"><p>Сначала осматриваем объект и уточняем задачу. Стоимость работ зависит от фактического состояния и объёма, поэтому не обещаем точную цену «по телефону» там, где её невозможно определить без осмотра.</p></div></div>
+<div class="faq-item"><button class="faq-q" type="button"><h3>Почему после начала ремонта цена растёт?</h3><span class="plus">+</span></button><div class="faq-a"><p>Потому что на объекте обнаруживаются дополнительные проблемы. Чтобы снизить этот риск, до старта разбираем состояние объекта, согласовываем объём и отдельно проговариваем возможные дополнительные работы.</p></div></div>
+<div class="faq-item"><button class="faq-q" type="button"><h3>А если проблема вернётся после ремонта?</h3><span class="plus">+</span></button><div class="faq-a"><p>Понятные условия вместо обещаний «всё будет хорошо» на все выполненные работы, срок зависит от вида работ и прописан в договоре. При гарантийном случае устраняем недочёты бесплатно.</p></div></div>
+<div class="faq-item"><button class="faq-q" type="button"><h3>Что если подрядчик сорвёт сроки?</h3><span class="plus">+</span></button><div class="faq-a"><p>Условия работ, сроки, стоимость и ответственность фиксируются в договоре. Это понятнее и безопаснее, чем договариваться обо всём устно.</p></div></div>
+<div class="faq-item"><button class="faq-q" type="button"><h3>Нужно срочно решить проблему?</h3><span class="plus">+</span></button><div class="faq-a"><p>Сначала оцениваем срочность и состояние объекта. Если есть аварийная проблема, отдельно согласовываем ближайший возможный выезд и временное решение.</p></div></div>
+<div class="faq-item"><button class="faq-q" type="button"><h3>Как не остаться с недоделанным объектом?</h3><span class="plus">+</span></button><div class="faq-a"><p>Схема оплаты согласовывается заранее и фиксируется в договоре. Можно разбить расчёты по этапам в зависимости от состава работ.</p></div></div>
+<div class="faq-item"><button class="faq-q" type="button"><h3>Кто отвечает за материалы, если их неправильно посчитали?</h3><span class="plus">+</span></button><div class="faq-a"><p>Можем работать с вашими материалами или помочь с подбором и закупкой. До покупки согласовываем марку, количество и назначение материалов.</p></div></div>
+<div class="faq-item"><button class="faq-q" type="button"><h3>Проблема появилась прямо сейчас. Что делать?</h3><span class="plus">+</span></button><div class="faq-a"><p>Не откладывайте: вода может повредить утеплитель, потолок, стены и внутреннюю отделку. Свяжитесь с нами, опишите ситуацию и отправьте фото — подскажем, что делать до выезда и согласуем дальнейшие действия.</p></div></div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+     12. ДОПОЛНИТЕЛЬНЫЙ ЭКСПЕРТНЫЙ БЛОК (SEO-текст)
+     ============================================================ -->
+<section class="pad-lg divider" id="about">
+<div class="wrap info-grid">
+<div class="info-visual reveal">
+<div class="ph ph-photo">
+<!-- images/2.jpg — фото бригады для раздела «о компании» -->
+<img alt="Бригада СТРОЙРЕМОНТ-МСК" class="zoomimg" src="41.png"/ onerror="this.style.display='none';var p=this.parentNode;p.style.display='flex';p.style.alignItems='center';p.style.justifyContent='center';p.style.background='#F3F4F6';p.style.color='#6B7280';p.style.fontSize='13px';p.style.fontFamily='monospace';p.style.padding='8px';p.style.wordBreak='break-all';p.style.textAlign='center';p.innerHTML='41.png';">
+<span class="spec-tag" style="bottom:14px; right:14px; top:auto; left:auto;"><b>Роман, владелец компании</b><span>Лично контролирует результат</span></span>
+</div>
+</div>
+<div class="info-copy reveal">
+<span class="eyebrow">О компании</span>
+<h2 class="section-title" style="margin-bottom:20px;">Берём то, от чего другие отказываются</h2>
+<p>Нестандартные кровли, сложные фундаменты, совмещённые работы — мы не отказываемся от задач, которые требуют думать, а не только молоток держать. Работаем по Москве и МО уже больше 10 лет, за это время накопили опыт, который трудно заменить теорией.</p>
+<p>Перед стартом всегда осматриваем объект, согласовываем объём и материалы. Наша цель — чтобы вы точно понимали, за что платите, и получили результат, который прослужит годами.</p>
+</div>
+</div>
+</section>
+<!-- ============================================================
+     13. ФИНАЛЬНЫЙ CTA
+     ============================================================ -->
+<section class="final-cta dark pad-lg" id="contacts">
+<div class="wrap final-grid">
+<div class="reveal">
+<span class="eyebrow">Готовы обсудить объект?</span>
+<h2>Не откладывайте — каждый месяц проблема становится дороже</h2>
+<p class="lead" style="margin-top:18px;">Протечка, трещина, сгнившая кровля — чем дольше ждёте, тем больше разрушений. Оставьте заявку сейчас: осмотрим объект, назовём честную цену и возьмём задачу в работу.</p>
+</div>
+<div class="final-box reveal">
+<div class="final-form-head">
+<span class="final-form-kicker"></span>
+<h3>Оставьте контакты — разберём задачу</h3>
+<p>Напишите в двух словах, что нужно сделать. Фото объекта можно отправить позже в переписке.</p>
+</div>
+<form class="final-contact-form" id="finalContactForm">
+<div class="final-form-row">
+<label><span>Имя</span><input type="text" name="name" autocomplete="name" placeholder="Ваше имя" required></label>
+<label><span>Телефон</span><input type="tel" name="phone" autocomplete="tel" placeholder="+7 966 389 21 33" required></label>
+</div>
+<label><span>Что нужно сделать?</span><textarea name="message" rows="3" placeholder="Например: ремонт крыши, пристройка, фасад…"></textarea></label>
+<button class="btn btn-lg btn-accent" type="submit">Оставить заявку <span class="arrow">→</span></button>
+<p class="final-form-note" id="finalFormNote">После заявки можно будет дополнить запрос фотографиями.</p>
+</form>
+</div>
+</div>
+</section>
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+<div class="wrap">
+<div class="footer-statement">Течёт крыша? Стройка встала? Приедем и решим.</div>
+<div class="footer-grid">
+<style id="footer-white-headings">
+footer h4 { color: #fff !important; }
+footer .footer-statement { color: #fff !important; }
+</style>
+<style id="compact-review-cards">
+.review-card {
+  min-height: 0 !important;
+  max-height: 180px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.review-text {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 4 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  font-size: 14.5px !important;
+  line-height: 1.5 !important;
+}
+.review-page {
+  grid-template-rows: auto !important;
+}
+</style>
+<div>
+<h4>СТРОЙРЕМОНТ-МСК</h4>
+<p>Когда не хочется годами собирать ремонт по частям.<br/>Москва и Московская область.<br/>Работаем по договору. Даём гарантию до 5 лет.</p>
+<p style="margin-top:12px;"><strong class="mono">Рейтинг 4.8</strong> (— оценок)</p>
+</div>
+<div>
+<h4>Услуги</h4>
+<ul><li><a href="#categories">Заборы под ключ</a></li><li><a href="#categories">Строительство фундаментов</a></li><li><a href="#categories">Автоматические ворота</a></li><li><a href="#categories">Строительство веранд и террас</a></li><li><a href="#categories">Навесы для автомобилей</a></li><li><a href="#categories">Укладка тротуарной плитки</a></li></ul>
+</div>
+<div>
+<h4>Контакты</h4>
+<ul>
+<li><a href="tel:+79663892133">+7 966 389 21 33 — позвонить</a></li>
+<li></li>
+<li>Режим работы: 7:00–23:00</li>
+<li>Москва и Московская область</li>
+</ul>
+</div>
+<div>
+<h4>Разделы</h4>
+<ul>
+<li><a href="#quiz">Калькулятор</a></li>
+<li><a href="#portfolio">Фото работ</a></li>
+<li><a href="#reviews">Отзывы</a></li>
+<li><a href="#contacts">Контакты</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-policies">
+<h4 style="text-transform:uppercase; font-family:var(--f-mono); font-size:12.6px; letter-spacing:.06em; margin-bottom:14px;">Правовая информация</h4>
+<div class="policy-links">
+<button data-modal="policy-consent" type="button">Согласие на обработку персональных данных</button>
+<button data-modal="policy-privacy" type="button">Политика конфиденциальности</button>
+<button data-modal="policy-offer" type="button">Условия сотрудничества (публичная оферта)</button>
+<button data-modal="policy-guarantee" type="button">Гарантийные обязательства</button>
+</div>
+<div class="footer-bottom">
+<span>© СТРОЙРЕМОНТ-МСК, 2026. Все цены ориентировочные, точная стоимость — после бесплатного замера.</span>
+<span>Сайт не является публичной офертой.</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Кнопка "наверх" -->
+<button aria-label="Наверх" class="back-to-top" id="backToTop" type="button">↑</button>
+<!-- ============ МОДАЛЬНЫЕ ОКНА ПОЛИТИК ============ -->
+<div class="modal-overlay" id="modal-policy-consent">
+<div class="modal-box">
+<button class="modal-close" data-close-modal="">×</button>
+<h3>Согласие на обработку персональных данных</h3>
+<p>Настоящее согласие регулирует обработку персональных данных, которые пользователь добровольно сообщает при использовании форм обратной связи, калькулятора, консультации или иных сервисов сайта.</p>
+<p>К персональным данным могут относиться имя, номер телефона и иные сведения, которые пользователь самостоятельно указывает в сообщении.</p>
+<p>Цель обработки — ответить на обращение, уточнить содержание работ, обсудить сроки и порядок взаимодействия, согласовать выезд на объект.</p>
+<p>Согласие действует в течение периода, необходимого для достижения заявленных целей обработки. Пользователь вправе отозвать согласие, направив соответствующее обращение способом, доступным на сайте.</p>
+</div>
+</div>
+<div class="modal-overlay" id="modal-policy-privacy">
+<div class="modal-box">
+<button class="modal-close" data-close-modal="">×</button>
+<h3>Политика конфиденциальности</h3>
+<p>Настоящая политика определяет общие принципы обработки и защиты информации, которую пользователь предоставляет при посещении сайта и взаимодействии с его сервисами.</p>
+<p>Персональные данные используются для обработки обращений, подготовки предварительных расчётов и согласования организационных вопросов.</p>
+<p>Для защиты информации применяются организационные и технические меры, включая ограничение доступа и контроль используемых систем.</p>
+<p>Сайт может использовать cookie для сохранения настроек и получения обезличенной статистики. Пользователь может ограничить их использование в настройках браузера.</p>
+</div>
+</div>
+<div class="modal-overlay" id="modal-policy-offer">
+<div class="modal-box">
+<button class="modal-close" data-close-modal="">×</button>
+<h3>Условия сотрудничества (публичная оферта)</h3>
+<p>Настоящие условия описывают общий порядок взаимодействия с пользователем, заинтересованным в выполнении строительных, ремонтных и отделочных работ, представленных на сайте.</p>
+<p>Стоимость зависит от площади, объёма, сложности, доступности объекта и других обстоятельств и определяется после уточнения параметров конкретной работы.</p>
+<p>Если стороны заключают договор подряда, именно договор является основным документом, определяющим обязательства сторон.</p>
+</div>
+</div>
+<div class="modal-overlay" id="modal-policy-guarantee">
+<div class="modal-box">
+<button class="modal-close" data-close-modal="">×</button>
+<h3>Гарантийные обязательства</h3>
+<p>Гарантийные обязательства распространяются на результат работ, для которых гарантия предусмотрена согласованными сторонами условиями, в пределах до 5 лет.</p>
+<p>Гарантия не распространяется на повреждения из-за неправильной эксплуатации, отсутствия обслуживания или действий третьих лиц.</p>
+<p>Устранение гарантийного случая производится в согласованный сторонами разумный срок с учётом характера работ и технологических условий.</p>
+</div>
+</div>
+<!-- ============ COOKIE-БАННЕР ============ -->
+<div class="cookie-banner" id="cookieBanner">
+<div class="wrap cookie-inner">
+<p>Мы используем файлы cookie для корректной работы сайта и аналитики посещаемости. Продолжая пользоваться сайтом, вы соглашаетесь с использованием cookie в соответствии с политикой конфиденциальности.</p>
+<button class="btn" id="cookieAccept" type="button">Понятно</button>
+</div>
+</div>
+<!-- ============ ВИДЕО-ПОПАП ============ -->
+<div class="video-modal-overlay" id="videoModalOverlay">
+<div class="video-modal-box">
+<button aria-label="Закрыть видео" class="video-modal-close" id="videoModalClose" type="button">×</button>
+<iframe allow="fullscreen" allowfullscreen="" frameborder="0" id="videoModalIframe" loading="lazy" src=""></iframe>
+</div>
+</div>
+<script>
+  // ---- Header solid on scroll ----
+  var header = document.getElementById('siteHeader');
+  function updateHeader(){
+    if(window.scrollY > 40){ header.classList.add('solid'); } else { header.classList.remove('solid'); }
+  }
+  window.addEventListener('scroll', updateHeader, {passive:true});
+  updateHeader();
+
+  // ---- Mobile menu ----
+  var menuTrigger = document.getElementById('menuTrigger');
+  var menuClose = document.getElementById('menuClose');
+  var mobileMenu = document.getElementById('mobileMenu');
+  menuTrigger.addEventListener('click', function(){ mobileMenu.classList.add('open'); document.body.style.overflow='hidden'; });
+  menuClose.addEventListener('click', function(){ mobileMenu.classList.remove('open'); document.body.style.overflow=''; });
+  mobileMenu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ mobileMenu.classList.remove('open'); document.body.style.overflow=''; });
+  });
+
+  // ---- Reveal on scroll ----
+  var revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){ if(entry.isIntersecting){ entry.target.classList.add('in'); io.unobserve(entry.target); } });
+    }, {threshold:0.12});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else { revealEls.forEach(function(el){ el.classList.add('in'); }); }
+
+  // ---- Счётчики в статистике (анимация при появлении) ----
+  (function(){
+    var counters = document.querySelectorAll('.counter');
+    if(!counters.length) return;
+    function animateCounter(el){
+      var target = parseFloat(el.getAttribute('data-target')) || 0;
+      var isDecimal = el.getAttribute('data-decimal') === 'true';
+      var suffix = el.getAttribute('data-suffix') || '';
+      var duration = 1100;
+      var start = null;
+      function step(ts){
+        if(!start) start = ts;
+        var progress = Math.min((ts - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        var current = target * eased;
+        el.textContent = (isDecimal ? current.toFixed(1) : Math.round(current)) + suffix;
+        if(progress < 1){ requestAnimationFrame(step); }
+      }
+      requestAnimationFrame(step);
+    }
+    if('IntersectionObserver' in window){
+      var cio = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){ if(entry.isIntersecting){ animateCounter(entry.target); cio.unobserve(entry.target); } });
+      }, {threshold:0.6});
+      counters.forEach(function(el){ cio.observe(el); });
+    } else { counters.forEach(function(el){ animateCounter(el); }); }
+  })();
+
+  // ==========================================================
+  // КВИЗ / КАЛЬКУЛЯТОР
+  (function(){
+    var totalSteps = 4;
+    var current = 1;
+    var answers = {};
+    var comments = {};
+    var stepLabel = document.getElementById('quizStepLabel');
+    var percentLabel = document.getElementById('quizPercentLabel');
+    var fill = document.getElementById('quizProgressFill');
+    var steps = document.querySelectorAll('.quiz-step');
+    var summaryBox = document.getElementById('quizSummary');
+    var summaryText = document.getElementById('quizSummaryText');
+    var summaryHint = document.getElementById('quizSummaryCopyHint');
+    var detailOptions = document.getElementById('quizDetailOptions');
+    var detailQuestion = document.getElementById('quizDetailQuestion');
+
+    var detailsByCategory = {
+      "Заборы под ключ": ["Профнастил","Дерево","Металлический штакетник","Секционный забор","Пока не определился"],
+      "Строительство фундаментов": ["Ленточный","Свайный / свайно-ростверковый","Плитный","Под дом","Под баню / пристройку","Нужна рекомендация"],
+      "Автоматические ворота": ["Откатные","Распашные","Новые ворота с автоматикой","Автоматика на существующие ворота","Нужна рекомендация"],
+      "Строительство веранд и террас": ["Открытая терраса","Закрытая / тёплая веранда","Пристройка к дому","Отдельная конструкция","Пока не определился"],
+      "Навесы для автомобилей": ["На 1 автомобиль","На 2 автомобиля","Стеновой / пристроенный","Отдельно стоящий","Нужна рекомендация"],
+      "Укладка тротуарной плитки": ["Дорожки","Двор / площадка","Парковка","Отмостка","Нужна подготовка основания"],
+      "Обшивка и утепление фасадов": ["Утепление + обшивка","Только обшивка","Ремонт существующего фасада","Сайдинг","Фасадные панели","Нужна рекомендация"],
+      "Современные хозблоки": ["Хозблок","Мастерская","Склад / хранение","Санитарный блок","Нужна планировка"],
+      "Дома": ["Одноэтажный дом","Двухэтажный дом","Дом с мансардой","Каркасный дом","Дом из бруса","Дом из газобетона","Дом из кирпича","Дом для постоянного проживания","Дачный дом","Другое решение","Нужна помощь с выбором"],
+      "Бани": ["Каркасная баня","Баня из бруса","Баня из бревна","Кирпичная баня","Баня из газобетона","Нужна помощь с выбором"],
+      "Кровельные работы и ремонт крыш": ["Ремонт протечек","Полная замена кровли","Монтаж новой кровли","Утепление кровли","Нужна диагностика"],
+      "Крыльца и входные группы": ["Новое крыльцо","Ремонт существующего","Ступени","Козырёк / навес","Входная группа под ключ"],
+      "Отмостка и водоотведение": ["Отмостка","Ливневая канализация","Дренаж участка","Водоотведение от дома","Отмостка + водоотведение"]
+    };
+
+    function renderProgress(){
+      stepLabel.textContent = 'Вопрос ' + current + ' из ' + totalSteps;
+      var pct = Math.round((current / totalSteps) * 100);
+      percentLabel.textContent = pct + '%';
+      fill.style.width = pct + '%';
+    }
+
+    function buildSummaryText(){
+      var lines = [];
+      if(answers.step1) lines.push('Направление: ' + answers.step1);
+      if(answers.step2) lines.push('Детали: ' + answers.step2);
+      if(answers.step3) lines.push('Срочность: ' + answers.step3);
+      ['step1','step2','step3'].forEach(function(key){
+        if(comments[key]) lines.push('Комментарий: ' + comments[key]);
+      });
+      return lines.join('\n');
+    }
+
+    function renderSummary(){
+      if(summaryText) summaryText.textContent = buildSummaryText() || 'Ответы не выбраны';
+    }
+
+    function goTo(n){
+      current = n;
+      steps.forEach(function(s){
+        s.classList.toggle('active', parseInt(s.getAttribute('data-step'),10) === n);
+      });
+      renderProgress();
+      if(n === 4) renderSummary();
+    }
+
+    function renderDetails(){
+      var category = answers.step1;
+      var options = detailsByCategory[category] || ['Опишите задачу своими словами', 'Нужна консультация', 'Пока не определился'];
+      detailOptions.innerHTML = '';
+      options.forEach(function(value, index){
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'quiz-opt';
+        btn.setAttribute('data-value', value);
+        btn.innerHTML = value;
+        detailOptions.appendChild(btn);
+        btn.addEventListener('click', function(){
+          detailOptions.querySelectorAll('.quiz-opt').forEach(function(o){ o.classList.remove('selected'); });
+          btn.classList.add('selected');
+          answers.step2 = value;
+          document.getElementById('quizNext2').disabled = false;
+        });
+      });
+      if(detailQuestion) detailQuestion.textContent = 'Уточните детали: ' + category;
+      document.getElementById('quizNext2').disabled = !answers.step2;
+    }
+
+    function bindChoiceGroup(stepNum){
+      var step = document.querySelector('.quiz-step[data-step="' + stepNum + '"]');
+      if(!step) return;
+      var group = step.querySelector('.quiz-options');
+      if(!group) return;
+      group.querySelectorAll('.quiz-opt').forEach(function(opt){
+        opt.addEventListener('click', function(){
+          group.querySelectorAll('.quiz-opt').forEach(function(o){ o.classList.remove('selected'); });
+          opt.classList.add('selected');
+          answers['step' + stepNum] = opt.getAttribute('data-value');
+          var nextBtn = document.getElementById('quizNext' + stepNum);
+          if(nextBtn) nextBtn.disabled = false;
+        });
+      });
+    }
+
+    document.querySelectorAll('.quiz-comment').forEach(function(field){
+      field.addEventListener('input', function(){
+        comments[field.getAttribute('data-comment-step')] = field.value.trim();
+      });
+    });
+
+    bindChoiceGroup(1);
+    bindChoiceGroup(3);
+
+    document.getElementById('quizNext1').addEventListener('click', function(){
+      if(!answers.step1) return;
+      answers.step2 = '';
+      renderDetails();
+      goTo(2);
+    });
+
+    document.getElementById('quizNext2').addEventListener('click', function(){
+      if(!answers.step2) return;
+      goTo(3);
+    });
+
+    document.getElementById('quizNext3').addEventListener('click', function(){
+      if(!answers.step3) return;
+      goTo(4);
+    });
+
+    document.querySelectorAll('.quiz-back').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        goTo(parseInt(btn.getAttribute('data-back'),10));
+      });
+    });
+
+    if(summaryBox){
+      function copySummary(){
+        var summary = buildSummaryText();
+        if(!summary) return;
+        function showCopied(){
+          if(!summaryHint) return;
+          var original = summaryHint.textContent;
+          summaryHint.textContent = 'Скопировано ✓';
+          summaryHint.classList.add('copied');
+          setTimeout(function(){
+            summaryHint.textContent = original;
+            summaryHint.classList.remove('copied');
+          }, 1600);
+        }
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(summary).then(showCopied).catch(function(){ fallbackCopy(summary, showCopied); });
+        } else { fallbackCopy(summary, showCopied); }
+      }
+      function fallbackCopy(value, cb){
+        var ta = document.createElement('textarea');
+        ta.value = value;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch(e){}
+        document.body.removeChild(ta);
+        cb();
+      }
+      summaryBox.addEventListener('click', copySummary);
+      summaryBox.addEventListener('keydown', function(e){ if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); copySummary(); } });
+    }
+
+    var form = document.getElementById('quizContactForm');
+    if(form){
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        var btn = form.querySelector('button[type="submit"]');
+        if(btn){ btn.textContent = 'Спасибо! Мы свяжемся с вами'; btn.disabled = true; }
+      });
+    }
+
+    renderProgress();
+  })();
+
+  // ---- Карусель отзывов ----
+  (function(){
+    var pages = Array.prototype.slice.call(document.querySelectorAll('#reviewsCarousel .review-page'));
+    var dots = Array.prototype.slice.call(document.querySelectorAll('#reviewDots .review-dot'));
+    var prev = document.getElementById('reviewsPrev');
+    var next = document.getElementById('reviewsNext');
+    if(!pages.length) return;
+    var current = 0;
+    function showPage(index){
+      current = (index + pages.length) % pages.length;
+      pages.forEach(function(page,i){ page.classList.toggle('is-active', i===current); });
+      dots.forEach(function(dot,i){
+        var active = i===current;
+        dot.classList.toggle('is-active', active);
+        dot.setAttribute('aria-current', active ? 'true' : 'false');
+      });
+    }
+    if(prev) prev.addEventListener('click', function(){ showPage(current-1); });
+    if(next) next.addEventListener('click', function(){ showPage(current+1); });
+    dots.forEach(function(dot){ dot.addEventListener('click', function(){ showPage(parseInt(dot.getAttribute('data-review-page'),10)||0); }); });
+    showPage(0);
+  })();
+
+  // ---- FAQ аккордеон ----
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      var wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(el){ el.classList.remove('open'); });
+      if(!wasOpen){ item.classList.add('open'); }
+    });
+  });
+
+  // ---- Модальные окна политик ----
+  document.querySelectorAll('[data-modal]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var modal = document.getElementById('modal-' + btn.getAttribute('data-modal'));
+      if(modal){ modal.classList.add('open'); }
+    });
+  });
+  document.querySelectorAll('.modal-overlay').forEach(function(overlay){
+    overlay.addEventListener('click', function(e){ if(e.target === overlay){ overlay.classList.remove('open'); } });
+  });
+  document.querySelectorAll('[data-close-modal]').forEach(function(btn){
+    btn.addEventListener('click', function(){ btn.closest('.modal-overlay').classList.remove('open'); });
+  });
+
+  // ---- Превью видео: кадр на 1-й секунде через API Яндекс Видеохостинга ----
+  (function initVideoPreviews(){
+    var items = document.querySelectorAll('.video-item[data-video-id]');
+    items.forEach(function(item){
+      var id = item.getAttribute('data-video-id');
+      var img = item.querySelector('.video-preview');
+      if(!id || !img) return;
+      var fallback = img.getAttribute('src');
+      var api = 'https://frontend.vh.yandex.ru/v22/player/' + encodeURIComponent(id) + '.json?stream_options=hires&disable_trackings=1';
+      fetch(api, {mode:'cors'}).then(function(r){
+        if(!r.ok) throw new Error('preview api');
+        return r.json();
+      }).then(function(data){
+        var content = data && data.content ? data.content : null;
+        var src = content && content.content_url ? content.content_url : (content && content.streams && content.streams[0] && content.streams[0].url);
+        if(!src) throw new Error('video source unavailable');
+        var video = document.createElement('video');
+        video.crossOrigin = 'anonymous'; video.muted = true; video.playsInline = true; video.preload = 'auto'; video.src = src;
+        video.addEventListener('loadedmetadata', function(){
+          try { video.currentTime = Math.min(1, Math.max(0, (video.duration || 1) - 0.05)); } catch(e) {}
+        }, {once:true});
+        video.addEventListener('seeked', function capture(){
+          try{
+            var canvas = document.createElement('canvas');
+            canvas.width = video.videoWidth || 1280; canvas.height = video.videoHeight || 720;
+            canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+            var dataUrl = canvas.toDataURL('image/webp', .88);
+            if(dataUrl.indexOf('data:image') === 0) img.src = dataUrl;
+          }catch(e){ img.src = fallback; }
+          video.removeAttribute('src'); video.load();
+        }, {once:true});
+        video.addEventListener('error', function(){ img.src = fallback; }, {once:true});
+        video.load();
+      }).catch(function(){ img.src = fallback; });
+    });
+  })();
+
+  // ---- Видео-попап ----
+  (function(){
+    var overlay = document.getElementById('videoModalOverlay');
+    var iframe = document.getElementById('videoModalIframe');
+    var closeBtn = document.getElementById('videoModalClose');
+    if(!overlay) return;
+
+    function openVideo(src){
+      iframe.src = src;
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeVideo(){
+      overlay.classList.remove('open');
+      iframe.src = '';
+      document.body.style.overflow = '';
+    }
+    document.querySelectorAll('.video-item[data-video-src]').forEach(function(btn){
+      btn.addEventListener('click', function(){ openVideo(btn.getAttribute('data-video-src')); });
+    });
+    closeBtn.addEventListener('click', closeVideo);
+    overlay.addEventListener('click', function(e){ if(e.target === overlay){ closeVideo(); } });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && overlay.classList.contains('open')){ closeVideo(); } });
+  })();
+
+  // ---- Индикатор прогресса прокрутки ----
+  (function(){
+    var bar = document.getElementById('scrollProgress');
+    if(!bar) return;
+    function update(){
+      var h = document.documentElement;
+      var scrolled = h.scrollTop;
+      var max = h.scrollHeight - h.clientHeight;
+      bar.style.width = (max > 0 ? (scrolled / max) * 100 : 0) + '%';
+    }
+    window.addEventListener('scroll', update, {passive:true});
+    window.addEventListener('resize', update);
+    update();
+  })();
+
+  // ---- Кнопка "наверх" ----
+  (function(){
+    var btn = document.getElementById('backToTop');
+    if(!btn) return;
+    window.addEventListener('scroll', function(){
+      if(window.scrollY > 700){ btn.classList.add('show'); } else { btn.classList.remove('show'); }
+    }, {passive:true});
+    btn.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  })();
+
+  // ---- "Прожектор" и лёгкий наклон карточек по курсору ----
+  (function(){
+    if(window.matchMedia && window.matchMedia('(hover: none)').matches) return; // не трогаем тач-устройства
+    var cards = document.querySelectorAll('.tilt');
+    cards.forEach(function(card){
+      card.addEventListener('mousemove', function(e){
+        var rect = card.getBoundingClientRect();
+        var x = e.clientX - rect.left, y = e.clientY - rect.top;
+        card.style.setProperty('--mx', x + 'px');
+        card.style.setProperty('--my', y + 'px');
+        var rx = ((y / rect.height) - .5) * -6;
+        var ry = ((x / rect.width) - .5) * 6;
+        card.style.transform = 'perspective(700px) rotateX(' + rx + 'deg) rotateY(' + ry + 'deg) translateY(-3px)';
+      });
+      card.addEventListener('mouseleave', function(){
+        card.style.transform = '';
+      });
+    });
+  })();
+
+  // ---- Рябь (ripple) при клике по кнопкам ----
+  (function(){
+    document.querySelectorAll('.btn').forEach(function(btn){
+      btn.addEventListener('click', function(e){
+        var rect = btn.getBoundingClientRect();
+        var ripple = document.createElement('span');
+        var size = Math.max(rect.width, rect.height);
+        ripple.className = 'ripple';
+        ripple.style.width = ripple.style.height = size + 'px';
+        ripple.style.left = (e.clientX - rect.left - size/2) + 'px';
+        ripple.style.top = (e.clientY - rect.top - size/2) + 'px';
+        btn.appendChild(ripple);
+        setTimeout(function(){ ripple.remove(); }, 650);
+      });
+    });
+  })();
+
+  // ---- Cookie-баннер: каждый 5-й заход ----
+  (function(){
+    var STORAGE_KEY = 'sg_visit_count';
+    var count = parseInt(localStorage.getItem(STORAGE_KEY) || '0', 10) + 1;
+    localStorage.setItem(STORAGE_KEY, String(count));
+    var banner = document.getElementById('cookieBanner');
+    if(count % 5 === 0){ banner.classList.add('show'); }
+    document.getElementById('cookieAccept').addEventListener('click', function(){ banner.classList.remove('show'); });
+  })();
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var form=document.getElementById('quizContactForm');
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var old=form.querySelector('.form-success');
+      if(old) old.remove();
+      var msg=document.createElement('div');
+      msg.className='form-success';
+      msg.textContent='Спасибо! Заявка сформирована. Подключение отправки можно добавить позже.';
+      msg.style.cssText='grid-column:1/-1;padding:14px 16px;background:#f3f4f6;border:1px solid #e6e9ee;font-size:16.8px;';
+      form.appendChild(msg);
+    });
+  }
+});
+
+  // Финальная форма: без backend показываем понятное подтверждение и предлагаем связаться по телефону.
+  var finalForm = document.getElementById('finalContactForm');
+  if(finalForm){
+    finalForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var note = document.getElementById('finalFormNote');
+      if(note){ note.textContent = 'Заявка заполнена. Позвоните нам — так мы сразу сможем обсудить задачу: ' + (window.SITE_PHONE ? window.SITE_PHONE.DISPLAY : '+7 966 389 21 33'); }
+      var btn = finalForm.querySelector('button[type="submit"]');
+      if(btn){ btn.textContent = 'Заявка заполнена ✓'; btn.disabled = true; }
+    });
+  }
+</script>
+<style id="footer-max-btn-style">
+/* Fix 6: кнопка MAX в подвале — просто текст без синей заливки */
+footer .btn-max,
+.mobile-menu-foot .btn-max{
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:6px !important;
+  background:transparent !important;
+  color:inherit !important;
+  border:1px solid currentColor !important;
+  padding:10px 18px !important;
+  font-family:var(--f-mono) !important;
+  font-size:13.2px !important;
+  font-weight:600 !important;
+  text-transform:uppercase !important;
+  letter-spacing:.04em !important;
+  text-decoration:none !important;
+  cursor:pointer !important;
+  opacity:0.75 !important;
+  transition:opacity .18s !important;
+}
+footer .btn-max:hover,
+footer .btn-max:focus-visible,
+.mobile-menu-foot .btn-max:hover,
+.mobile-menu-foot .btn-max:focus-visible{
+  opacity:1 !important;
+  text-decoration:none !important;
+  transform:translateY(-1px) !important;
+}
+</style>
+<style id="hero-max-btn-style">
+.hero-max-btn{
+  background:#1E5EFF !important;
+  border-color:#1E5EFF !important;
+  color:#fff !important;
+}
+.hero-max-btn:hover,.hero-max-btn:focus-visible{
+  background:#ffffff !important;
+  border-color:#174BD0 !important;
+  color:#fff !important;
+}
+</style>
+<style id="final-beige-blue-theme">
+/* ЕДИНСТВЕННАЯ АКТИВНАЯ ТЕМА: бежевый + синий + чёрный */
+:root{
+  --sand:#F3EBDD !important;
+  --sand-deep:#bdbdbd !important;
+  --graphite:#111111 !important;
+  --clay:#1E5EFF !important;
+  --btn-blue:#1E5EFF !important;
+  --btn-blue-hover:#174BD0 !important;
+  --accent:#2F80FF !important;
+  --accent-2:#5AA9FF !important;
+  --accent-soft:#E8F2FF !important;
+  --olive:#111111 !important;
+  --stone:#4F4F4F !important;
+  --ink-70:#171717 !important;
+  --border:#D8CCBA !important;
+  --border-strong:#111111 !important;
+  --white:#FFFDF8 !important;
+  --radius:0px !important;
+}
+html,body{
+  background:#F3EBDD !important;
+  color:#111111 !important;
+}
+body{overflow-x:hidden;}
+.hero{background:#F3EBDD !important;}
+a{color:#111111;}
+a:hover,a:focus{color:#2F80FF !important;}
+.btn,.btn-accent{
+  background:#1E5EFF !important;
+  border-color:#1E5EFF !important;
+  color:#FFFFFF !important;
+}
+.btn:hover,.btn:focus-visible,.btn-accent:hover{
+  background:#174BD0 !important;
+  border-color:#174BD0 !important;
+  color:#FFFFFF !important;
+}
+.btn-outline{
+  background:transparent !important;
+  color:#111111 !important;
+  border-color:#111111 !important;
+}
+.btn-outline:hover,.btn-outline:focus-visible{
+  background:#1E5EFF !important;
+  border-color:#1E5EFF !important;
+  color:#FFFFFF !important;
+}
+</style>
+<script id="category-scroll-to-quiz">
+/* Fix 5: при клике на категорию — плавный скролл к калькулятору */
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('.cat-card[href="#quiz"], .cat-grid a[href="#quiz"]').forEach(function(card){
+    card.addEventListener('click', function(e){
+      e.preventDefault();
+      var quiz = document.getElementById('quiz');
+      if(quiz){ quiz.scrollIntoView({behavior:'smooth', block:'start'}); }
+    });
+  });
+});
+</script>
+<script id="max-contact-buttons">
+(function(){
+  var MAX_URL='https://max.ru/u/f9LHodD0cOKMAV_CCj5Nnj_3gqnjIKA7j5QTeL0JzQPmm9q-cjE7iaw-UE8';
+
+  function makeMaxButton(){
+    var a=document.createElement('a');
+    a.className='btn-max';
+    a.href=MAX_URL;
+    a.target='_blank';
+    a.rel='noopener';
+    a.innerHTML='MAX <span>↗</span>';
+    return a;
+  }
+
+  function addNearPhone(){
+    document.querySelectorAll('.phone-block').forEach(function(block){
+      if(!block.querySelector('.btn-max')) block.appendChild(makeMaxButton());
+    });
+
+    /* В мобильном меню кнопка должна быть видна отдельно от телефона */
+    var foot=document.querySelector('.mobile-menu-foot');
+    if(foot && !foot.querySelector('.btn-max')) foot.appendChild(makeMaxButton());
+
+    /* В футере рядом с номером телефона */
+    document.querySelectorAll('a[href^="tel:"]').forEach(function(phone){
+      var parent=phone.parentElement;
+      if(!parent || parent.querySelector('.btn-max')) return;
+      if(parent.tagName==='LI'){
+        var wrap=document.createElement('span');
+        wrap.style.cssText='display:flex;align-items:center;gap:12px;flex-wrap:wrap;';
+        phone.parentNode.insertBefore(wrap,phone);
+        wrap.appendChild(phone);
+        wrap.appendChild(makeMaxButton());
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded',addNearPhone);
+})();
+</script>
+
+
+<style id="fix-form-visibility">
+/* Fix quiz description visibility and replace graphite form fields with beige */
+.quiz-intro,
+.quiz-intro *,
+.quiz-intro h1,
+.quiz-intro h2,
+.quiz-intro h3,
+.quiz-intro p,
+.quiz-intro .muted,
+.quiz-intro .subtitle {
+  color: #111111 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.quiz-intro {
+  background: #FFFFFF !important;
+  padding: 28px 32px !important;
+  margin-bottom: 24px !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.quiz-intro p {
+  display: block !important;
+  line-height: 1.65 !important;
+  margin: 10px 0 0 !important;
+  max-width: 850px !important;
+}
+
+/* All form controls: beige instead of graphite */
+input,
+textarea,
+select,
+.quiz input,
+.quiz textarea,
+.quiz select,
+.quiz-form input,
+.quiz-form textarea,
+.quiz-form select,
+.form input,
+.form textarea,
+.form select,
+.contact-form input,
+.contact-form textarea,
+.contact-form select,
+.calculator input,
+.calculator textarea,
+.calculator select,
+.option,
+.quiz-option,
+.calc-option,
+.choice,
+.choice-card {
+  background: #ececec !important;
+  background-color: #ececec !important;
+  color: #111111 !important;
+  border-color: #CDBFA9 !important;
+  box-shadow: none !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #5F574D !important;
+  opacity: 1 !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  background: #F3EBDD !important;
+  color: #111111 !important;
+  border-color: #2F80FF !important;
+  outline: 2px solid rgba(47,128,255,.16) !important;
+  outline-offset: 1px !important;
+}
+
+/* Override dark/graphite field rules with higher specificity */
+.dark input,
+.dark textarea,
+.dark select,
+.quiz-intro input,
+.quiz-intro textarea,
+.quiz-intro select,
+.final-box input,
+.final-box textarea,
+.final-box select,
+section input,
+section textarea,
+section select {
+  background: #ececec !important;
+  color: #111111 !important;
+  border-color: #CDBFA9 !important;
+}
+
+/* Selected calculator/options remain beige, with blue indication */
+.quiz-option.active,
+.calc-option.active,
+.choice.active,
+.choice-card.active,
+.option.active,
+.quiz-option.selected,
+.calc-option.selected,
+.choice.selected,
+.choice-card.selected,
+.option.selected {
+  background: #E8F2FF !important;
+  color: #111111 !important;
+  border-color: #2F80FF !important;
+}
+</style>
+
+
+<style id="force-quiz-intro-black">
+.quiz-intro,
+.quiz-intro *,
+.quiz-intro h1,
+.quiz-intro h2,
+.quiz-intro h3,
+.quiz-intro p,
+.quiz-intro strong,
+.quiz-intro span {
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+</style>
+
+
+<script id="reliable-phone-links">
+(function(){
+  function fixPhoneLinks(){
+    document.querySelectorAll('a[href^="tel:"], a.phone').forEach(function(a){
+      a.setAttribute('href','tel:+79663892133');
+      if (!a.querySelector('input,button')) {
+        var text = (a.textContent || '').trim();
+        if (text && /835\s*:/.test(text)) {
+          a.textContent = text.replace(/835\s*:\s*/g,'');
+        }
+      }
+    });
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', fixPhoneLinks);
+  } else {
+    fixPhoneLinks();
+  }
+})();
+</script>
+
+
+<div class="photo-lightbox" id="photoLightbox" aria-hidden="true" role="dialog" aria-label="Просмотр фотографии">
+  <button class="photo-lightbox-close" id="photoLightboxClose" type="button" aria-label="Закрыть">×</button>
+  <img id="photoLightboxImage" src="" alt="">
+  <div class="photo-lightbox-hint">Нажмите на фото или Esc, чтобы закрыть</div>
+</div>
+<script id="photo-lightbox-script">
+(function(){
+  function init(){
+    var box=document.getElementById('photoLightbox');
+    var image=document.getElementById('photoLightboxImage');
+    var close=document.getElementById('photoLightboxClose');
+    if(!box||!image||!close)return;
+    document.querySelectorAll('img').forEach(function(img){
+      if(img.closest('#photoLightbox'))return;
+      if(img.closest('#about')||img.closest('#contacts'))return;
+      if(img.closest('#quiz')||img.closest('#portfolio')||img.closest('#categories'))return;
+      img.classList.add('photo-clickable');
+      img.addEventListener('click',function(e){
+        e.preventDefault();
+        image.src=img.currentSrc||img.src;
+        image.alt=img.alt||'Фотография';
+        box.classList.add('open');
+        box.setAttribute('aria-hidden','false');
+        document.body.style.overflow='hidden';
+      });
+    });
+    function hide(){
+      box.classList.remove('open');
+      box.setAttribute('aria-hidden','true');
+      image.src='';
+      document.body.style.overflow='';
+    }
+    close.addEventListener('click',hide);
+    image.addEventListener('click',hide);
+    box.addEventListener('click',function(e){if(e.target===box)hide();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')hide();});
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+</script>
+</body>
+
+</html>
+
+<style id="custom-fixes-2026">
+/* ── Правка 2: убрать zoom-курсор в блоке Направления работ ── */
+#categories .ph img,
+#categories .ph img.zoomimg {
+  cursor: default !important;
+}
+#categories .ph:hover img.zoomimg {
+  transform: none !important;
+}
+
+/* ── Правка 2: убрать zoom-курсор в блоке Квиз (шаг 1 — фото категорий) ── */
+#quiz .qo-photo img {
+  cursor: default !important;
+  pointer-events: none !important;
+}
+
+/* ── Правка 2: в квизе шаг 1 — 3 плашки в ряду ── */
+#quiz .quiz-step[data-step="1"] .quiz-options {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+/* ── Правка 2: в квизе шаг 2 — 2 плашки в ряду (через #quizDetailOptions) ── */
+#quizDetailOptions,
+#quiz .quiz-step[data-step="2"] .quiz-options {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+
+/* ── Перебиваем compact-calculator-grid который ставит 4 колонки ── */
+@media (min-width: 760px) {
+  #quiz .quiz-step[data-step="1"] .quiz-options,
+  #quiz .quiz-step[data-step="1"] .options,
+  #quiz .quiz-step[data-step="1"] .choices {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+  #quizDetailOptions,
+  #quiz .quiz-step[data-step="2"] .quiz-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* ── Правка 3: форма в секции #contacts — синяя обводка ── */
+#contacts .final-box {
+  border: 2.5px solid #1E5EFF !important;
+  box-shadow: 0 0 0 4px rgba(30,94,255,0.10), 0 16px 40px rgba(30,94,255,0.08) !important;
+  border-radius: 4px !important;
+}
+
+/* ── Синяя обводка вокруг калькулятора ── */
+#quiz .quiz-wrap {
+  border: 2.5px solid #1E5EFF !important;
+  box-shadow: 0 0 0 4px rgba(30,94,255,0.10), 0 16px 40px rgba(30,94,255,0.08) !important;
+}
+
+/* ── Правка 1: текст отзывов — убрать клип и задать нормальный overflow ── */
+.review-card {
+  max-height: none !important;
+  overflow: visible !important;
+}
+.review-text {
+  display: block !important;
+  -webkit-line-clamp: unset !important;
+  overflow: visible !important;
+  font-size: 14.5px !important;
+  line-height: 1.55 !important;
+}
+</style>
+
+<script id="custom-fixes-quiz-step2-cols">
+/* Правка 2: принудительно 2 колонки на шаге 2 квиза (применяется после renderDetails) */
+(function(){
+  function patchStep2Grid(){
+    var el = document.getElementById('quizDetailOptions');
+    if(el) el.style.gridTemplateColumns = 'repeat(2,1fr)';
+  }
+  document.addEventListener('DOMContentLoaded', function(){
+    var container = document.getElementById('quizDetailOptions');
+    if(!container) return;
+    patchStep2Grid();
+    var mo = new MutationObserver(patchStep2Grid);
+    mo.observe(container, {childList: true});
+  });
+})();
+</script>
+
+<!-- Попап для отзывов на мобильных -->
+<div id="reviewPopup" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.6);padding:16px;align-items:flex-end;justify-content:center;">
+  <div id="reviewPopupBox" style="background:#fff;width:100%;max-width:520px;border-radius:12px 12px 0 0;padding:24px 20px 32px;max-height:85vh;overflow-y:auto;position:relative;">
+    <button id="reviewPopupClose" type="button" style="position:absolute;top:14px;right:14px;background:none;border:none;font-size:24px;cursor:pointer;line-height:1;color:#555;">×</button>
+    <div id="reviewPopupQuote" style="font-size:32px;color:#2F80FF;line-height:1;margin-bottom:8px;">"</div>
+    <p id="reviewPopupText" style="font-size:16px;line-height:1.65;color:#171717;margin:0 0 18px;"></p>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <div>
+        <div id="reviewPopupName" style="font-weight:600;font-size:15px;"></div>
+        <div id="reviewPopupStars" style="color:#2F80FF;font-size:13px;">★★★★★</div>
+      </div>
+      <div id="reviewPopupMeta" style="margin-left:auto;font-size:12px;color:#888;font-family:monospace;text-transform:uppercase;letter-spacing:.03em;"></div>
+    </div>
+  </div>
+</div>
+
+<script id="review-popup-mobile">
+(function(){
+  var popup = document.getElementById('reviewPopup');
+  var closeBtn = document.getElementById('reviewPopupClose');
+  var textEl = document.getElementById('reviewPopupText');
+  var nameEl = document.getElementById('reviewPopupName');
+  var metaEl = document.getElementById('reviewPopupMeta');
+
+  function isMobile(){ return window.innerWidth <= 760; }
+
+  function openPopup(card){
+    textEl.textContent = card.querySelector('.review-text').textContent;
+    nameEl.textContent = card.querySelector('.review-name').textContent;
+    metaEl.textContent = card.querySelector('.review-meta').textContent;
+    popup.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+  function closePopup(){
+    popup.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('click', function(e){
+    if(!isMobile()) return;
+    var card = e.target.closest('.review-card');
+    if(card){ openPopup(card); return; }
+  });
+
+  closeBtn.addEventListener('click', closePopup);
+  popup.addEventListener('click', function(e){ if(e.target === popup) closePopup(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closePopup(); });
+})();
+</script>
+
+<style id="mobile-final-compact">
+/* ФИНАЛЬНАЯ МОБИЛЬНАЯ ВЕРСИЯ
+   1) Калькулятор: без фото, 3 категории в ряд.
+   2) Текстовые блоки на телефоне визуально сокращены примерно вдвое.
+*/
+@media (max-width:760px){
+  /* Калькулятор */
+  #quiz .quiz-options,
+  #quiz .quiz-options.cols-2{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:6px!important;
+  }
+
+  #quiz .quiz-opt .qo-photo,
+  #quiz .quiz-opt .qo-photo.qo-placeholder,
+  #quiz .quiz-opt .qo-photo img{
+    display:none!important;
+  }
+
+  #quiz .quiz-opt{
+    min-height:42px!important;
+    padding:8px 5px!important;
+    font-size:11.5px!important;
+    line-height:1.15!important;
+    gap:0!important;
+    justify-content:center!important;
+    text-align:center!important;
+  }
+
+  #quiz .quiz-opt.selected::after{
+    font-size:8px!important;
+    margin-top:3px!important;
+  }
+
+  #quiz .quiz-question{
+    font-size:17px!important;
+    line-height:1.2!important;
+    margin-bottom:12px!important;
+  }
+
+  #quiz .quiz-intro h2{
+    font-size:25px!important;
+    line-height:1.1!important;
+  }
+
+  #quiz .quiz-intro p{
+    font-size:13px!important;
+    line-height:1.4!important;
+  }
+
+  /* Меньше текста в карточках и информационных блоках */
+  .quick-item p,
+  .cat-card p,
+  .svc-card p,
+  .adv-item p,
+  .step p,
+  .review-text,
+  .info-copy p,
+  .faq-a p,
+  .final-note,
+  .cookie-inner p{
+    font-size:12px!important;
+    line-height:1.4!important;
+    display:-webkit-box!important;
+    -webkit-box-orient:vertical!important;
+    -webkit-line-clamp:3!important;
+    overflow:hidden!important;
+  }
+
+  .quick-item h4,
+  .cat-card h4,
+  .svc-card h4,
+  .adv-item h3,
+  .step h3,
+  .review-name,
+  .faq-q h3{
+    font-size:13px!important;
+    line-height:1.2!important;
+  }
+
+  .hero-copy .lead,
+  .lead{
+    font-size:13px!important;
+    line-height:1.45!important;
+    display:-webkit-box!important;
+    -webkit-box-orient:vertical!important;
+    -webkit-line-clamp:3!important;
+    overflow:hidden!important;
+  }
+
+  .eyebrow{
+    font-size:10px!important;
+    margin-bottom:10px!important;
+  }
+
+  .section-title{
+    font-size:25px!important;
+    line-height:1.1!important;
+  }
+
+  .quick-item,
+  .svc-card,
+  .adv-item,
+  .step{
+    padding:14px!important;
+  }
+
+  .cat-card .cat-label{
+    padding:10px!important;
+    gap:6px!important;
+  }
+
+  .review-card{
+    padding:10px!important;
+  }
+
+  .info-copy h3{
+    font-size:16px!important;
+    margin-top:18px!important;
+    margin-bottom:7px!important;
+  }
+
+  .modal-box p{
+    font-size:12px!important;
+    line-height:1.45!important;
+  }
+}
+</style>
+
+<style id="final-all-fixes">
+/* ===== ФИНАЛЬНЫЕ ПРАВКИ: БЕЛЫЙ ФОН, УБРАТЬ БЕЖЕВЫЙ ===== */
+
+/* ─── 1. Глобальный белый фон и чёткий текст ─── */
+html, body {
+  background: #FFFFFF !important;
+  color: #0F1724 !important;
+}
+
+/* ─── 2. Все бежевые/кремовые/песочные переменные → белые ─── */
+:root {
+  --sand: #FFFFFF !important;
+  --sand-deep: #F5F6F8 !important;
+  --accent-soft: #FFF1E8 !important;
+}
+
+/* ─── 3. Секции и hero — белый фон ─── */
+section, .hero, .hero-wrap,
+.pad-lg, .pad-md, .pad-sm {
+  background: #FFFFFF !important;
+}
+
+/* ─── 4. Карточки и сетки — белый ─── */
+.quick-item, .svc-card, .adv-item, .step,
+.cat-card, .review-card, .video-item,
+.ph, .portfolio-item {
+  background: #FFFFFF !important;
+}
+.quick-grid, .cat-grid, .svc-grid, .adv-grid,
+.video-grid, .portfolio-grid, .steps-row, .review-page {
+  background: #FFFFFF !important;
+}
+
+/* ─── 5. Мобильное меню ─── */
+.mobile-menu {
+  background: #FFFFFF !important;
+}
+
+/* ─── 6. Плашки калькулятора (desktop) — белый ─── */
+#quiz .quiz-opt {
+  background: #FFFFFF !important;
+  color: #0F1724 !important;
+  border-color: #E2E5EA !important;
+}
+#quiz .quiz-opt:hover,
+#quiz .quiz-opt:focus-visible {
+  background: #FFF1E8 !important;
+  color: #0F1724 !important;
+  border-color: #FF5A1F !important;
+}
+#quiz .quiz-opt.selected,
+#quiz .quiz-opt.active,
+#quiz .quiz-opt[aria-pressed="true"] {
+  background: #FFF1E8 !important;
+  color: #0F1724 !important;
+  border-color: #FF5A1F !important;
+}
+#quiz .quiz-opt.selected::after {
+  color: #FF5A1F !important;
+}
+
+/* ─── 7. Плашки калькулятора (мобильный) — белый ─── */
+@media (max-width: 760px) {
+  #quiz .quiz-opt,
+  #quiz .quiz-opt:visited {
+    background: #FFFFFF !important;
+    color: #0F1724 !important;
+    border-color: #E2E5EA !important;
+  }
+  #quiz .quiz-opt:hover,
+  #quiz .quiz-opt:focus-visible {
+    background: #FFF1E8 !important;
+    color: #0F1724 !important;
+    border-color: #FF5A1F !important;
+  }
+  #quiz .quiz-opt.selected,
+  #quiz .quiz-opt.active,
+  #quiz .quiz-opt[aria-pressed="true"] {
+    background: #FFF1E8 !important;
+    color: #0F1724 !important;
+    border-color: #FF5A1F !important;
+  }
+  #quiz .quiz-opt.selected::after {
+    color: #FF5A1F !important;
+  }
+}
+
+/* ─── 8. Комментарий (textarea) в квизе ─── */
+.quiz-comment {
+  background: #FFFFFF !important;
+  border-color: #E2E5EA !important;
+}
+
+/* ─── 9. Белый фон в quiz-wrap (правая часть) ─── */
+#quiz .quiz-wrap,
+#quiz .quiz-body {
+  background: #FFFFFF !important;
+}
+
+/* ─── 10. Красивая типографика: тонкие засечки для заголовков, чистый текст ─── */
+h1 {
+  font-weight: 300 !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1.05 !important;
+}
+h2 {
+  font-weight: 300 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.1 !important;
+}
+h3 {
+  font-weight: 500 !important;
+  letter-spacing: -0.015em !important;
+}
+h4 {
+  font-weight: 500 !important;
+  letter-spacing: -0.01em !important;
+}
+.lead {
+  font-size: 18px !important;
+  line-height: 1.75 !important;
+  color: #374151 !important;
+  font-weight: 400 !important;
+}
+p {
+  line-height: 1.7 !important;
+}
+.eyebrow {
+  letter-spacing: 0.12em !important;
+  font-size: 12px !important;
+}
+
+/* ─── 11. Статистика hero — чёрный крупный ─── */
+.stat b {
+  color: #0F1724 !important;
+  font-weight: 200 !important;
+  letter-spacing: -0.04em !important;
+}
+
+/* ─── 12. Мелкий текст / muted — серый, не бежевый ─── */
+.stat span, .phone small, .form-note, .final-note {
+  color: #6B7280 !important;
+}
+
+/* ─── 13. Убираем ph-placeholder — серая рамка без бежевого ─── */
+.ph {
+  background: linear-gradient(160deg, #F5F6F8 0%, #ECECEE 100%) !important;
+}
+</style>
